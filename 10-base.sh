@@ -15,6 +15,7 @@ AddPackage networkmanager # Network connection manager and user applications
 AddPackage acpi # Client for battery, power, and thermal readings
 
 # Utilities
+AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
 AddPackage snapper # A tool for managing BTRFS and LVM snapshots
 AddPackage snap-pac # Pacman hooks that use snapper to create pre/post btrfs snapshots like openSUSE's YaST
 AddPackage git # the fast distributed version control system
