@@ -55,7 +55,7 @@ IgnorePath /usr/lib/\*
 IgnorePath /usr/share/glib-2.0/\*
 IgnorePath /usr/share/mime/\*
 IgnorePath /var/lib/boltd/\*
-IgnorePath /var/lib/sddm\* 
+IgnorePath /var/lib/sddm\*
 IgnorePath /etc/xml/catalog
 IgnorePath /usr/share/applications/mimeinfo.cache
 IgnorePath /var/lib/colord/\*
@@ -65,3 +65,4 @@ IgnorePath /usr/share/icons/Adwaita/icon-theme.cache
 IgnorePath /usr/share/icons/AdwaitaLegacy/icon-theme.cache
 IgnorePath /usr/share/icons/hicolor/icon-theme.cache
 IgnorePath /var/lib/plocate/plocate.db
+IgnorePath /etc/passwd.OLD
