@@ -24,6 +24,10 @@ AddPackage openssh # SSH protocol implementation for remote login, command execu
 AddPackage rsync # A fast and versatile file copying tool for remote and local files
 AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
 AddPackage plocate # Alternative to locate, faster and compatible with mlocate's database.
+AddPackage compsize # Calculate compression ratio of a set of files on Btrfs
+AddPackage htop # Interactive process viewer
+AddPackage ncdu # Disk usage analyzer with an ncurses interface
+AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
 
 # Security
 AddPackage apparmor # Mandatory Access Control (MAC) using Linux Security Module (LSM)
@@ -49,6 +53,7 @@ CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Luxembourg
 CopyFile /etc/apparmor/parser.conf
 CopyFile /etc/cmdline.d/apparmor.conf
 CopyFile /etc/cmdline.d/root.conf
+CopyFile /etc/cmdline.d/default.conf
 CopyFile /etc/conf.d/snapper
 CopyFile /etc/sudoers
 CopyFile /etc/vconsole.conf
@@ -57,3 +62,4 @@ CopyFile /etc/mkinitcpio.d/linux.preset
 CopyFile /etc/pacman.d/mirrorlist
 CopyFile /etc/snapper/configs/root 640
 CopyFile /etc/pacman.conf
+CopyFile /etc/issue
