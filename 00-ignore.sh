@@ -1,9 +1,17 @@
+# Btrfs snapshots
+IgnorePath /.snapshots/\*
+
+# /boot
 IgnorePath /boot/\*
+
+# /efi
 IgnorePath /efi/EFI/\*
 IgnorePath /efi/loader/entries
 IgnorePath /efi/loader/entries.srel
 IgnorePath /efi/loader/keys
 IgnorePath /efi/loader/random-seed
+
+# /etc
 IgnorePath /etc/adjtime
 IgnorePath /etc/ca-certificates/\*
 IgnorePath /etc/fonts/conf.d/\*
@@ -12,10 +20,11 @@ IgnorePath /etc/group
 IgnorePath /etc/group-
 IgnorePath /etc/gshadow
 IgnorePath /etc/gshadow-
+IgnorePath /etc/iscsi/\*
 IgnorePath /etc/kernel/pcr\*
 IgnorePath /etc/ld.so.cache
 IgnorePath /etc/NetworkManager/\*
-IgnorePath /etc/os-release ../usr/lib/os-release
+IgnorePath /etc/os-release
 IgnorePath /etc/pacman.d/gnupg/\*
 IgnorePath /etc/passwd
 IgnorePath /etc/passwd-
@@ -30,11 +39,14 @@ IgnorePath /etc/subgid
 IgnorePath /etc/subgid-
 IgnorePath /etc/subuid
 IgnorePath /etc/subuid-
+IgnorePath /etc/texmf/\*
 IgnorePath /etc/.updated
 IgnorePath /etc/xml/catalog
-IgnorePath /.snapshots/\*
+
+# /usr
 IgnorePath /usr/bin/groupmems
 IgnorePath /usr/lib/\*
+IgnorePath /usr/lib32/gconv/\*
 IgnorePath /usr/lib/locale/locale-archive
 IgnorePath /usr/lib/modules/\*
 IgnorePath /usr/lib/systemd/\*
@@ -46,14 +58,21 @@ IgnorePath /usr/share/icons/AdwaitaLegacy/icon-theme.cache
 IgnorePath /usr/share/icons/hicolor/icon-theme.cache
 IgnorePath /usr/share/info/dir
 IgnorePath /usr/share/mime/\*
+IgnorePath /usr/share/texmf-dist/\*
+
+# /var
+IgnorePath /var/db/\*
 IgnorePath /var/lib/boltd/\*
+IgnorePath /var/lib/btrfs/\*
 IgnorePath /var/lib/colord/\*
 IgnorePath /var/lib/dbus/machine-id /etc/machine-id
+IgnorePath /var/lib/dkms/\*
 IgnorePath /var/lib/lastlog
 IgnorePath /var/lib/libuuid
 IgnorePath /var/lib/machines
 IgnorePath /var/lib/mysql
 IgnorePath /var/lib/NetworkManager/\*
+IgnorePath /var/lib/openldap/\*
 IgnorePath /var/lib/pacman/\*
 IgnorePath /var/lib/plocate/plocate.db
 IgnorePath /var/lib/portables
@@ -61,6 +80,7 @@ IgnorePath /var/lib/private
 IgnorePath /var/lib/sbctl/\*
 IgnorePath /var/lib/sddm\*
 IgnorePath /var/lib/systemd/\*
+IgnorePath /var/lib/texmf/\*
 IgnorePath /var/lib/tpm2-tss/\*
 IgnorePath /var/lib/upower/\*
 IgnorePath /var/log/\*

@@ -7,6 +7,11 @@ AddPackage pyside6
 AddPackage cronie
 AddPackage tesseract-data-fra
 AddPackage kde-applications-meta
+AddPackage aspell-en
+AddPackage aspell-fr
+AddPackage hunspell-en_us # US English hunspell dictionaries
+AddPackage cups # OpenPrinting CUPS - daemon package
+
 
 CreateLink /etc/systemd/user/default.target.wants/xdg-user-dirs-update.service /usr/lib/systemd/user/xdg-user-dirs-update.service
 CreateLink /etc/systemd/user/pipewire-session-manager.service /usr/lib/systemd/user/wireplumber.service

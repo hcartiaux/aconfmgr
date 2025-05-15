@@ -1,6 +1,10 @@
 # Base package installation
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux
+AddPackage linux-headers
+AddPackage linux-lts
+AddPackage linux-lts-headers
+
 AddPackage intel-ucode # Microcode update files for Intel CPUs
 AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage base-devel # Basic tools to build Arch Linux packages
@@ -13,12 +17,18 @@ AddPackage sbctl # Secure Boot key manager
 AddPackage sbsigntools # Tools to add signatures to EFI binaries and Drivers
 AddPackage networkmanager # Network connection manager and user applications
 AddPackage acpi # Client for battery, power, and thermal readings
+AddPackage ethtool # Utility for controlling network drivers and hardware
 
 # Utilities
+AddPackage figlet # A program for making large letters out of ordinary text
+AddPackage bc # An arbitrary precision calculator language
 AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
 AddPackage snapper # A tool for managing BTRFS and LVM snapshots
 AddPackage snap-pac # Pacman hooks that use snapper to create pre/post btrfs snapshots like openSUSE's YaST
 AddPackage git # the fast distributed version control system
+AddPackage git-crypt # Transparent file encryption in Git
+AddPackage git-filter-repo # Quickly rewrite git repository history (filter-branch replacement)
+AddPackage git-lfs # Git extension for versioning large files
 AddPackage tig # Text-mode interface for Git.
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
 AddPackage rsync # A fast and versatile file copying tool for remote and local files
@@ -27,7 +37,9 @@ AddPackage plocate # Alternative to locate, faster and compatible with mlocate's
 AddPackage compsize # Calculate compression ratio of a set of files on Btrfs
 AddPackage htop # Interactive process viewer
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
+
 AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
+IgnorePath /etc/pacman.d/mirrorlist
 
 # Security
 AddPackage apparmor # Mandatory Access Control (MAC) using Linux Security Module (LSM)
@@ -59,7 +71,8 @@ CopyFile /etc/sudoers
 CopyFile /etc/vconsole.conf
 CopyFile /etc/mkinitcpio.conf
 CopyFile /etc/mkinitcpio.d/linux.preset
-CopyFile /etc/pacman.d/mirrorlist
+CopyFile /etc/mkinitcpio.d/linux-lts.preset
 CopyFile /etc/snapper/configs/root 640
 CopyFile /etc/pacman.conf
 CopyFile /etc/issue
+CopyFile /etc/makepkg.conf
