@@ -3,9 +3,9 @@ AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux
-AddPackage linux-headers
-AddPackage linux-lts
-AddPackage linux-lts-headers
+AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
+AddPackage linux-lts # The LTS Linux kernel and modules
+AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
 AddPackage intel-ucode # Microcode update files for Intel CPUs
 AddPackage man-db # A utility for reading man pages
 
@@ -33,7 +33,7 @@ AddPackage efitools # Tools for manipulating UEFI secure boot platforms
 AddPackage systemd-ukify # Combine kernel and initrd into a signed Unified Kernel Image
 AddPackage sbctl # Secure Boot key manager
 AddPackage sbsigntools # Tools to add signatures to EFI binaries and Drivers
-AddPackage --foreign systemd-boot-pacman-hook
+AddPackage --foreign systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 
 # ESP permissions
 CopyFile /efi/loader/loader.conf 700

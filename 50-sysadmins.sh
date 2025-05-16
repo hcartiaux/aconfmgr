@@ -30,7 +30,7 @@ AddPackage wl-clipboard # Command-line copy/paste utilities for Wayland
 AddPackage qemu-desktop # A QEMU setup for desktop environments
 AddPackage --foreign vagrant # Build and distribute virtualized development environments
 AddPackage virtualbox # Powerful x86 virtualization for enterprise as well as home use
-AddPackage virtualbox-host-dkms
+AddPackage virtualbox-host-dkms # VirtualBox Host kernel modules sources
 AddPackage virtualbox-guest-iso # The official VirtualBox Guest Additions ISO image
 
 # Languages
@@ -50,7 +50,7 @@ AddPackage --foreign puppet-lint # Check that your Puppet manifests conform to t
 AddPackage jre-openjdk # OpenJDK Java 24 full runtime environment
 
 ## Ruby
-AddPackage ruby
+AddPackage ruby # An object-oriented language for quick and easy programming
 
 # Old OpenSSL, necessary for compiling old versions of ruby
 AddPackage openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security

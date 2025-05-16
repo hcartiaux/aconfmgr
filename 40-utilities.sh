@@ -29,7 +29,7 @@ AddPackage 7zip # File archiver for extremely high compression
 AddPackage tmux # Terminal multiplexer
 AddPackage the_silver_searcher # Code searching tool similar to Ack, but faster
 AddPackage yq # Command-line YAML, XML, TOML processor - jq wrapper for YAML/XML/TOML documents
-AddPackage jq
+AddPackage jq # Command-line JSON processor
 AddPackage txt2man # Converts flat ASCII text to man page format
 AddPackage pdftk # Command-line tool for working with PDFs
 
@@ -38,8 +38,8 @@ AddPackage vim # Vi Improved, a highly configurable, improved version of the vi 
 AddPackage --foreign vim-puppet # Puppet language syntax highlighting for vim.
 
 # Latex
-AddPackage texlive-meta
-AddPackage texmaker
+AddPackage texlive-metai # Metapackage to install Tex Live
+AddPackage texmaker # Free cross-platform LaTeX editor
 
 # Calculators
 AddPackage bc # An arbitrary precision calculator language

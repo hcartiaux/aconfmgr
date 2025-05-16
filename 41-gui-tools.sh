@@ -1,7 +1,7 @@
 # Image manipulation
 AddPackage darktable # Utility to organize and develop raw images
 AddPackage inkscape # Professional vector graphics editor
-AddPackage gimp
+AddPackage gimp # GNU Image Manipulation Program
 
 # Networking
 AddPackage wireguard-tools # next generation secure network tunnel - tools for configuration
