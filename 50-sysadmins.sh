@@ -51,8 +51,10 @@ AddPackage jre-openjdk # OpenJDK Java 24 full runtime environment
 
 ## Ruby
 AddPackage ruby # An object-oriented language for quick and easy programming
+AddPackage ruby-bundler # Manages an application's dependencies through its entire life, across many machines, systematically and repeatably
 
-# Old OpenSSL, necessary for compiling old versions of ruby
+## Build dependencies
+AddPackage cmake # A cross-platform open-source make system
 AddPackage openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
 
 # Misc
