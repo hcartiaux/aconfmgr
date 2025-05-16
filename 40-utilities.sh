@@ -38,7 +38,7 @@ AddPackage vim # Vi Improved, a highly configurable, improved version of the vi 
 AddPackage --foreign vim-puppet # Puppet language syntax highlighting for vim.
 
 # Latex
-AddPackage texlive-metai # Metapackage to install Tex Live
+AddPackage texlive-meta # Metapackage to install Tex Live
 AddPackage texmaker # Free cross-platform LaTeX editor
 
 # Calculators
