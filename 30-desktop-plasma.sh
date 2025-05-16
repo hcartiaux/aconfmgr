@@ -8,7 +8,7 @@ AddPackage plasma-meta # Meta package to install KDE Plasma
 # Install kde-applications-meta
 AddPackage pyside6 # Enables the use of Qt6 APIs in Python applications
 AddPackage cronie # Daemon that runs specified programs at scheduled times and related tools
-AddPackage # Tesseract OCR data (fra)
+AddPackage tesseract-data-fra # Tesseract OCR data (fra)
 AddPackage kde-applications-meta # Meta package for KDE Applications
 
 # SSDM manually
