@@ -26,6 +26,7 @@ IgnorePath /etc/ld.so.cache
 IgnorePath /etc/NetworkManager/\*
 IgnorePath /etc/os-release
 IgnorePath /etc/pacman.d/gnupg/\*
+IgnorePath /etc/pacman.d/mirrorlist
 IgnorePath /etc/passwd
 IgnorePath /etc/passwd-
 IgnorePath /etc/passwd.OLD
@@ -62,11 +63,13 @@ IgnorePath /usr/share/texmf-dist/\*
 
 # /var
 IgnorePath /var/db/\*
+IgnorePath /var/lib/bluetooth/\*
 IgnorePath /var/lib/boltd/\*
 IgnorePath /var/lib/btrfs/\*
 IgnorePath /var/lib/colord/\*
 IgnorePath /var/lib/dbus/machine-id /etc/machine-id
 IgnorePath /var/lib/dkms/\*
+IgnorePath /var/lib/fwupd/\*
 IgnorePath /var/lib/lastlog
 IgnorePath /var/lib/libuuid
 IgnorePath /var/lib/machines
@@ -74,6 +77,7 @@ IgnorePath /var/lib/mysql
 IgnorePath /var/lib/NetworkManager/\*
 IgnorePath /var/lib/openldap/\*
 IgnorePath /var/lib/pacman/\*
+IgnorePath /var/lib/passim/\*
 IgnorePath /var/lib/plocate/plocate.db
 IgnorePath /var/lib/portables
 IgnorePath /var/lib/private
@@ -81,6 +85,7 @@ IgnorePath /var/lib/sbctl/\*
 IgnorePath /var/lib/sddm\*
 IgnorePath /var/lib/systemd/\*
 IgnorePath /var/lib/texmf/\*
+IgnorePath /var/lib/tlp/rfkill_saved
 IgnorePath /var/lib/tpm2-tss/\*
 IgnorePath /var/lib/upower/\*
 IgnorePath /var/log/\*

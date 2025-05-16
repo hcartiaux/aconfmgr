@@ -19,6 +19,8 @@ AddPackage networkmanager # Network connection manager and user applications
 AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage ethtool # Utility for controlling network drivers and hardware
 
+AddPackage --foreign systemd-boot-pacman-hook
+
 # Utilities
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage bc # An arbitrary precision calculator language
@@ -39,7 +41,6 @@ AddPackage htop # Interactive process viewer
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
 
 AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
-IgnorePath /etc/pacman.d/mirrorlist
 
 # Security
 AddPackage apparmor # Mandatory Access Control (MAC) using Linux Security Module (LSM)

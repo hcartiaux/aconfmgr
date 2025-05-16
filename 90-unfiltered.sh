@@ -21,10 +21,12 @@ AddPackage openldap # Lightweight Directory Access Protocol (LDAP) client and se
 AddPackage openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
 AddPackage optipng # Compresses PNG files to a smaller size, without losing any information.
 AddPackage parallel # A shell tool for executing jobs in parallel
-AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
-AddPackage pdftk # Command-line tool for working with PDFs
-AddPackage powertop # A tool to diagnose issues with power consumption and power management
+
 AddPackage pwgen # Password generator for creating easily memorable passwords
+AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
+AddPackage wl-clipboard # Command-line copy/paste utilities for Wayland
+
+AddPackage pdftk # Command-line tool for working with PDFs
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-rich # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
 AddPackage qemu-desktop # A QEMU setup for desktop environments
