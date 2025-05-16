@@ -1,22 +1,23 @@
 # Base package installation
+AddPackage base # Minimal package set to define a basic Arch Linux installation
+AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux
 AddPackage linux-headers
 AddPackage linux-lts
 AddPackage linux-lts-headers
-
 AddPackage intel-ucode # Microcode update files for Intel CPUs
-AddPackage base # Minimal package set to define a basic Arch Linux installation
-AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage man-db # A utility for reading man pages
 AddPackage btrfs-progs # Btrfs filesystem utilities
+
+# UEFI and Secure Boot
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
 AddPackage efitools # Tools for manipulating UEFI secure boot platforms
 AddPackage systemd-ukify # Combine kernel and initrd into a signed Unified Kernel Image
 AddPackage sbctl # Secure Boot key manager
 AddPackage sbsigntools # Tools to add signatures to EFI binaries and Drivers
+
 AddPackage networkmanager # Network connection manager and user applications
-AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage ethtool # Utility for controlling network drivers and hardware
 
 AddPackage --foreign systemd-boot-pacman-hook
