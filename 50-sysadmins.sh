@@ -51,6 +51,7 @@ AddPackage jre-openjdk # OpenJDK Java 24 full runtime environment
 
 ## Ruby
 AddPackage ruby # An object-oriented language for quick and easy programming
+AddPackage ruby-irb # Interactive Ruby command-line tool for REPL (Read Eval Print Loop).
 AddPackage ruby-bundler # Manages an application's dependencies through its entire life, across many machines, systematically and repeatably
 AddPackage ruby-erb # An easy to use but powerful templating system for Ruby
 
