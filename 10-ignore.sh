@@ -14,6 +14,7 @@ IgnorePath /efi/loader/random-seed
 # /etc
 IgnorePath /etc/adjtime
 IgnorePath /etc/ca-certificates/\*
+IgnorePath /etc/colord/\*
 IgnorePath /etc/fonts/conf.d/\*
 IgnorePath /etc/fonts/conf.d/10-hinting-slight.conf
 IgnorePath /etc/group
@@ -30,7 +31,7 @@ IgnorePath /etc/pacman.d/mirrorlist
 IgnorePath /etc/passwd
 IgnorePath /etc/passwd-
 IgnorePath /etc/passwd.OLD
-IgnorePath /etc/.pwd.lock
+IgnorePath /etc/printcap
 IgnorePath /etc/resolv.conf
 IgnorePath /etc/shadow
 IgnorePath /etc/shadow-
@@ -41,8 +42,9 @@ IgnorePath /etc/subgid-
 IgnorePath /etc/subuid
 IgnorePath /etc/subuid-
 IgnorePath /etc/texmf/\*
-IgnorePath /etc/.updated
 IgnorePath /etc/xml/catalog
+IgnorePath /etc/.updated
+IgnorePath /etc/.pwd.lock
 
 # /usr
 IgnorePath /usr/bin/groupmems
@@ -89,5 +91,6 @@ IgnorePath /var/lib/tlp/rfkill_saved
 IgnorePath /var/lib/tpm2-tss/\*
 IgnorePath /var/lib/upower/\*
 IgnorePath /var/log/\*
+IgnorePath /var/spool/cups/\*
 IgnorePath /var/tmp/\*
 IgnorePath /var/.updated

@@ -23,8 +23,5 @@ AddPackage aspell-en # English dictionary for aspell
 AddPackage aspell-fr # French dictionary for aspell
 AddPackage hunspell-en_us # US English hunspell dictionaries
 
-# Printing
-AddPackage cups # OpenPrinting CUPS - daemon package
-
 # Yakuake skin
 AddPackage --foreign yakuake-skin-breeze-thin-dark # A Breeze Thin Dark skin for Yakuake (Plasma 5)
