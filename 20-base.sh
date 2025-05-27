@@ -63,6 +63,7 @@ AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper wri
 
 # Security
 CopyFile /etc/sudoers
+CopyFile /etc/sudoers.d/session 440
 
 AddPackage apparmor # Mandatory Access Control (MAC) using Linux Security Module (LSM)
 CopyFile /etc/apparmor/parser.conf
