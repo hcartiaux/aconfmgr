@@ -27,7 +27,7 @@ IgnorePath /etc/ld.so.cache
 IgnorePath /etc/NetworkManager/\*
 IgnorePath /etc/os-release
 IgnorePath /etc/pacman.d/gnupg/\*
-IgnorePath /etc/pacman.d/mirrorlist
+IgnorePath /etc/pacman.d/mirrorlist\*
 IgnorePath /etc/passwd
 IgnorePath /etc/passwd-
 IgnorePath /etc/passwd.OLD
@@ -43,6 +43,7 @@ IgnorePath /etc/subuid
 IgnorePath /etc/subuid-
 IgnorePath /etc/texmf/\*
 IgnorePath /etc/xml/catalog
+IgnorePath /etc/wireguard/\*key
 IgnorePath /etc/.updated
 IgnorePath /etc/.pwd.lock
 
