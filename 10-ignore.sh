@@ -14,7 +14,7 @@ IgnorePath /efi/loader/random-seed
 # /etc
 IgnorePath /etc/adjtime
 IgnorePath /etc/ca-certificates/\*
-IgnorePath /etc/colord/\*
+IgnorePath /etc/colord\*
 IgnorePath /etc/fonts/conf.d/\*
 IgnorePath /etc/fonts/conf.d/10-hinting-slight.conf
 IgnorePath /etc/group
