@@ -13,6 +13,7 @@ AddPackage plocate # Alternative to locate, faster and compatible with mlocate's
 # Networking
 AddPackage nmap # Utility for network discovery and security auditing
 AddPackage tcpdump # Powerful command-line packet analyzer
+AddPackage iperf3 # TCP, UDP, and SCTP network bandwidth measurement tool
 AddPackage wget # Network utility to retrieve files from the web
 AddPackage whois # Intelligent WHOIS client
 AddPackage openbsd-netcat # TCP/IP swiss army knife. OpenBSD variant.

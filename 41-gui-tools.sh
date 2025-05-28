@@ -17,6 +17,7 @@ AddPackage --foreign libreoffice-extension-grammalecte-fr # French grammar check
 
 # Messaging
 AddPackage signal-desktop # Signal Private Messenger for Linux
+AddPackage telegram-desktop # Official Telegram Desktop client
 
 # Misc
 AddPackage syncthing # Open Source Continuous Replication / Cluster Synchronization Thing
