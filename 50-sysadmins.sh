@@ -62,4 +62,4 @@ AddPackage openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Tr
 
 # Misc
 AddPackage parallel # A shell tool for executing jobs in parallel
-
+AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
