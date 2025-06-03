@@ -1,7 +1,7 @@
 if lspci | grep -i "3D controller: NVIDIA" > /dev/null; then
 
     # Nvidia driver support
-    AddPackage nvidiai # NVIDIA kernel modules
+    AddPackage nvidia # NVIDIA kernel modules
     AddPackage nvidia-lts # NVIDIA drivers for linux-lts
     AddPackage nvidia-prime # NVIDIA Prime Render Offload configuration and utilities
     AddPackage nvidia-utils # NVIDIA drivers utilities
