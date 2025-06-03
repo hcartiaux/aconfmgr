@@ -12,12 +12,18 @@ AddPackage man-db # A utility for reading man pages
 CopyFile /etc/fstab
 CopyFile /etc/hostname
 CopyFile /etc/locale.conf
-CopyFile /etc/locale.gen
 CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Luxembourg
 CopyFile /etc/cmdline.d/root.conf
 CopyFile /etc/cmdline.d/default.conf
 CopyFile /etc/vconsole.conf
 CopyFile /etc/issue
+
+# Specify locales
+f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
+sed -i 's/^#\(en_US.UTF-8\)/\1/g' "$f"
+
+# Enable Magic SysRq
+echo "kernel.sysrq = 1" > "$(CreateFile /etc/sysctl.d/99-sysrq.conf)"
 
 # Btrfs tools
 AddPackage btrfs-progs # Btrfs filesystem utilities
