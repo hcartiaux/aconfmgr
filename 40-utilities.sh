@@ -23,6 +23,7 @@ AddPackage openldap # Lightweight Directory Access Protocol (LDAP) client and se
 AddPackage rtorrent # Ncurses BitTorrent client based on libTorrent
 
 # Compression
+AddPackage unzip # For extracting and viewing files in .zip archives
 AddPackage unrar # The RAR uncompression program
 AddPackage 7zip # File archiver for extremely high compression
 
