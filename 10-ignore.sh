@@ -58,9 +58,7 @@ IgnorePath /usr/lib/systemd/\*
 IgnorePath /usr/lib/udev/hwdb.bin
 IgnorePath /usr/share/applications/mimeinfo.cache
 IgnorePath /usr/share/glib-2.0/\*
-IgnorePath /usr/share/icons/Adwaita/icon-theme.cache
-IgnorePath /usr/share/icons/AdwaitaLegacy/icon-theme.cache
-IgnorePath /usr/share/icons/hicolor/icon-theme.cache
+IgnorePath /usr/share/icons/\*/\*.cache
 IgnorePath /usr/share/info/dir
 IgnorePath /usr/share/mime/\*
 IgnorePath /usr/share/texmf-dist/\*
