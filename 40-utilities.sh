@@ -8,7 +8,9 @@ AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage htop # Interactive process viewer
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
 AddPackage sg3_utils # Generic SCSI utilities
+
 AddPackage plocate # Alternative to locate, faster and compatible with mlocate's database.
+CopyFile /etc/updatedb.conf
 
 # Networking
 AddPackage nmap # Utility for network discovery and security auditing
