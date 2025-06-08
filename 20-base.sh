@@ -28,6 +28,7 @@ echo "kernel.sysrq = 1" > "$(CreateFile /etc/sysctl.d/99-sysrq.conf)"
 # Btrfs tools
 AddPackage btrfs-progs # Btrfs filesystem utilities
 AddPackage compsize # Calculate compression ratio of a set of files on Btrfs
+AddPackage duperemove # Btrfs extent deduplication utility
 AddPackage snapper # A tool for managing BTRFS and LVM snapshots
 AddPackage snap-pac # Pacman hooks that use snapper to create pre/post btrfs snapshots like openSUSE's YaST
 CopyFile /etc/conf.d/snapper
