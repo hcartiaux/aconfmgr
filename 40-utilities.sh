@@ -6,6 +6,7 @@ AddPackage ethtool # Utility for controlling network drivers and hardware
 AddPackage lsof # Lists open files for running Unix processes
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage htop # Interactive process viewer
+AddPackage glances # CLI curses-based monitoring tool
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
 AddPackage sg3_utils # Generic SCSI utilities
 
