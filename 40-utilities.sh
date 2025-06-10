@@ -54,8 +54,12 @@ AddPackage jpegoptim # Jpeg optimisation utility
 AddPackage optipng # Compresses PNG files to a smaller size, without losing any information.
 AddPackage --foreign findimagedupes # Tool to find visually similar or duplicate images
 
+# Backup
+AddPackage --foreign bontmia # Bontmia (Backup Over Network To Multiple Incremental Archives)
+
 # Misc
 AddPackage --foreign pandoc-bin # Conversion between documentation formats
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage tigervnc # Suite of VNC servers and clients based on the VNC 4 branch of TightVNC
+
 
