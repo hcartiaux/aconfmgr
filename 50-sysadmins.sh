@@ -39,6 +39,7 @@ AddPackage virtualbox-guest-iso # The official VirtualBox Guest Additions ISO im
 ## Python
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-rich # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
+AddPackage python-xmljson # Converts XML into JSON/Python dicts/arrays and vice-versa.
 AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
 AddPackage --foreign python-pssh # Parallel versions of the openssh tools ssh, scp, rsync, nuke, slurp
 
