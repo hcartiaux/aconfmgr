@@ -60,6 +60,16 @@ AddPackage ruby-erb # An easy to use but powerful templating system for Ruby
 AddPackage cmake # A cross-platform open-source make system
 AddPackage openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
 
+# Mkdocs
+AddPackage mkdocs # Project documentation with Markdown
+AddPackage mkdocs-material # Documentation that simply works
+AddPackage python-pymdown-extensions # Extensions for Python Markdown
+AddPackage --foreign mkdocs-exclude # A mkdocs plugin that lets you exclude files or trees.
+AddPackage --foreign mkdocs-git-revision-date-localized-plugin # MkDocs plugin to add a last updated date to your site pages
+AddPackage --foreign mkdocs-include-markdown-plugin # Mkdocs Markdown includer plugin.
+AddPackage --foreign mkdocs-material-extensions # Markdown extension resources for MkDocs Material
+AddPackage --foreign python-markdown-include # Provides syntax for Python-Markdown for the inclusion of other Markdown documents
+
 # Misc
 AddPackage parallel # A shell tool for executing jobs in parallel
 AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
