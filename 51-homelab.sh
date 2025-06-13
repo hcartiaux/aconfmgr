@@ -34,4 +34,6 @@ AddPackage signify # OpenBSD tool to cryptographically sign and verify files
 #########
 # 1kl-os
 #########
+AddPackage qemu-system-riscv # QEMU system emulator for RISC-V
+AddPackage qemu-system-riscv-firmware # Firmware for QEMU system emulator for RISC-V
 AddPackage lld # Linker from the LLVM project
