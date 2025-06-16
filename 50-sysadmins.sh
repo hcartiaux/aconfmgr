@@ -44,7 +44,6 @@ AddPackage --foreign python-gitchangelog # Creates a changelog from git log hist
 AddPackage --foreign python-pssh # Parallel versions of the openssh tools ssh, scp, rsync, nuke, slurp
 
 ## Puppet
-AddPackage --foreign pdk # Puppet Development Kit bundles tools and helpers to create high quality puppet modules
 AddPackage --foreign python-pypuppetdb # Library for working with the PuppetDB REST API
 AddPackage --foreign puppet-lint # Check that your Puppet manifests conform to the style guide.
 
