@@ -20,7 +20,6 @@ AddPackage tk # A windowing toolkit for use with tcl (git gui dependency)
 
 # File transfers
 AddPackage rsync # A fast and versatile file copying tool for remote and local files
-AddPackage open-iscsi # iSCSI userland tools
 
 # Password management
 AddPackage pwgen # Password generator for creating easily memorable passwords
