@@ -62,6 +62,10 @@ AddPackage ruby-irb # Interactive Ruby command-line tool for REPL (Read Eval Pri
 AddPackage ruby-bundler # Manages an application's dependencies through its entire life, across many machines, systematically and repeatably
 AddPackage ruby-erb # An easy to use but powerful templating system for Ruby
 
+## Node
+AddPackage nodejs # Evented I/O for V8 javascript ("Current" release)
+AddPackage npm # JavaScript package manager
+
 ## Build dependencies
 AddPackage cmake # A cross-platform open-source make system
 AddPackage openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
