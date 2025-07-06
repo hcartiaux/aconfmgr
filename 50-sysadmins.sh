@@ -44,6 +44,7 @@ AddPackage python-pip # The PyPA recommended tool for installing Python packages
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-rich # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
 AddPackage python-xmljson # Converts XML into JSON/Python dicts/arrays and vice-versa.
+AddPackage python-flake8 # The modular source code checker: pep8, pyflakes and co
 AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
 AddPackage --foreign python-pssh # Parallel versions of the openssh tools ssh, scp, rsync, nuke, slurp
 
@@ -80,6 +81,14 @@ AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and 
 AddPackage python-pynvim # Python client for Neovim
 AddPackage lua51 # Powerful lightweight programming language designed for extending applications
 AddPackage luarocks # Deployment and management system for Lua modules
+
+## Language servers
+AddPackage python-lsp-server # Fork of the python-language-server project, maintained by the Spyder IDE team and the community
+AddPackage bash-language-server # Bash language server implementation based on Tree Sitter and its grammar for Bash
+AddPackage systemd-language-server # Language Server for Systemd unit files
+AddPackage ansible-language-server # Ansible Language Server
+AddPackage yaml-language-server # YAML Language Server
+AddPackage lua-language-server # Lua Language Server coded by Lua
 
 # Misc
 AddPackage parallel # A shell tool for executing jobs in parallel
