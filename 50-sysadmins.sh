@@ -1,12 +1,15 @@
+# SSH tools
+
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
 AddPackage sshuttle # Transparent proxy server that forwards all TCP packets over ssh
 AddPackage sshpass # Fool ssh into accepting an interactive password non-interactively
 AddPackage --foreign clustershell # Python framework for efficient cluster administration
 
-# Enable ssh-agent
+## Enable ssh-agent
 CopyFile "/etc/systemd/user/ssh-agent.service"
 SystemdEnable --type user --from-file "/etc/systemd/user/ssh-agent.service"
 systemd_files+=(user/ssh-agent.service)
+
 
 # Git packages
 AddPackage git # the fast distributed version control system
@@ -17,6 +20,7 @@ AddPackage tig # Text-mode interface for Git.
 AddPackage --foreign gitflow-cjs # CJS Edition of the git extensions to provide high-level repository operations for Vincent Driessen's branching model.
 AddPackage --foreign gitflow-zshcompletion-avh # ZSH completion support for gitflow (AVH-Edition).
 AddPackage tk # A windowing toolkit for use with tcl (git gui dependency)
+AddPackage lazygit # Simple terminal UI for git commands
 
 # File transfers
 AddPackage rsync # A fast and versatile file copying tool for remote and local files
@@ -36,6 +40,7 @@ AddPackage virtualbox-guest-iso # The official VirtualBox Guest Additions ISO im
 # Languages
 
 ## Python
+AddPackage python-pip # The PyPA recommended tool for installing Python packages
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-rich # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
 AddPackage python-xmljson # Converts XML into JSON/Python dicts/arrays and vice-versa.
@@ -47,7 +52,8 @@ AddPackage --foreign python-pypuppetdb # Library for working with the PuppetDB R
 AddPackage --foreign puppet-lint # Check that your Puppet manifests conform to the style guide.
 
 ## Java
-AddPackage jre-openjdk # OpenJDK Java 24 full runtime environment
+AddPackage jdk-openjdk # OpenJDK Java 24 full runtime environment
+AddPackage icedtea-web # Additional components for OpenJDK - Browser plug-in and Web Start implementation
 
 ## Ruby
 AddPackage ruby # An object-oriented language for quick and easy programming
@@ -69,6 +75,14 @@ AddPackage --foreign mkdocs-include-markdown-plugin # Mkdocs Markdown includer p
 AddPackage --foreign mkdocs-material-extensions # Markdown extension resources for MkDocs Material
 AddPackage --foreign python-markdown-include # Provides syntax for Python-Markdown for the inclusion of other Markdown documents
 
+# Neovim and its dependencies
+AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
+AddPackage python-pynvim # Python client for Neovim
+AddPackage lua51 # Powerful lightweight programming language designed for extending applications
+AddPackage luarocks # Deployment and management system for Lua modules
+
 # Misc
 AddPackage parallel # A shell tool for executing jobs in parallel
 AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
+AddPackage ast-grep # CLI tool for code structural search, lint and rewriting
+AddPackage fd # Simple, fast and user-friendly alternative to find
