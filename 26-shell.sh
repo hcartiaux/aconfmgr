@@ -10,5 +10,6 @@ AddPackage powerline-fonts # Patched fonts for powerline
 AddPackage fzf # Command-line fuzzy finder
 
 AddPackage shellcheck # Shell script analysis tool (binary release, static)
+AddPackage shfmt # Format shell programs
 
 AddPackage ttf-hack-nerd # Patched font Hack from nerd fonts library
