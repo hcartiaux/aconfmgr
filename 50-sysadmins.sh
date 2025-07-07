@@ -86,14 +86,6 @@ AddPackage python-pynvim # Python client for Neovim
 AddPackage lua51 # Powerful lightweight programming language designed for extending applications
 AddPackage luarocks # Deployment and management system for Lua modules
 
-## Language servers
-AddPackage python-lsp-server # Fork of the python-language-server project, maintained by the Spyder IDE team and the community
-AddPackage bash-language-server # Bash language server implementation based on Tree Sitter and its grammar for Bash
-AddPackage systemd-language-server # Language Server for Systemd unit files
-AddPackage ansible-language-server # Ansible Language Server
-AddPackage yaml-language-server # YAML Language Server
-AddPackage lua-language-server # Lua Language Server coded by Lua
-
 # Misc
 AddPackage parallel # A shell tool for executing jobs in parallel
 AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
