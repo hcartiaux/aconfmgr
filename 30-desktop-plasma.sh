@@ -9,6 +9,7 @@ AddPackage plasma-meta # Meta package to install KDE Plasma
 AddPackage pyside6 # Enables the use of Qt6 APIs in Python applications
 AddPackage cronie # Daemon that runs specified programs at scheduled times and related tools
 AddPackage tesseract-data-fra # Tesseract OCR data (fra)
+AddPackage phonon-qt6-vlc # Phonon VLC backend for Qt6
 AddPackage kde-applications-meta # Meta package for KDE Applications
 
 # SSDM manually
