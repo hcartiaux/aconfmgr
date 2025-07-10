@@ -107,13 +107,13 @@ function SystemdEnable() {
         local -a aliases
 
         if grep -q Alias= "$unit_source"; then
-             IFS=$' \n\t'
-             mapfile -t aliases < <(sed -nE '/^Aliases=/ {s/^Aliases=//; s/ /\n/gp}' $unit_source)
-             IFS="$oIFS"
-             for target in "${aliases[@]}"; do
-                 CreateLink "/etc/systemd/${type}/${target}" "${unit}"
-                 systemd_files+=("${type}/${target}")
-             done
+            IFS=$' \n\t'
+            mapfile -t aliases < <(sed -nE '/^Aliases=/ {s/^Aliases=//; s/ /\n/gp}' $unit_source)
+            IFS="$oIFS"
+            for target in "${aliases[@]}"; do
+                CreateLink "/etc/systemd/${type}/${target}" "${unit}"
+                systemd_files+=("${type}/${target}")
+            done
         fi
     fi
 }
