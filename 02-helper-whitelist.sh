@@ -22,7 +22,7 @@ function IgnorePathsExcept() {
     # Find everything except given whitelist and the directory
     # searched from.
     find "$search_dir" -not \( "${find_args[@]}" -path "$search_dir" \) -prune | \
-    while read file; do
+    while read -r file; do
         if [[ -d "$file" ]]; then
             IgnorePath "$file/*"
         else
