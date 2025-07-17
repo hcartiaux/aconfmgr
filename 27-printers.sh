@@ -7,4 +7,6 @@ IgnorePath /etc/cups/\*
 #CreateLink /etc/cups/ppd/EPSON_ET-2820_Series.ppd /usr/share/ppd/epson-inkjet-printer-escpr/Epson-ET-2820_Series-epson-escpr-en.ppd
 #CopyFile /etc/cups/printers.conf
 
+CreateFile /etc/samba/smb.conf > /dev/null
+
 SystemdEnable cups /usr/lib/systemd/system/cups.service
