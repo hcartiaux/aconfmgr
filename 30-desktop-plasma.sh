@@ -1,4 +1,18 @@
+# X11 keymap configuration
 CopyFile /etc/X11/xorg.conf.d/00-keyboard.conf
+
+# mdns and network service discovery
+AddPackage nss-mdns # glibc plugin providing host name resolution via mDNS
+AddPackage avahi # Service Discovery for Linux using mDNS/DNS-SD (compatible with Bonjour)
+f="$(GetPackageOriginalFile filesystem /etc/nsswitch.conf)"
+sed -i '/^hosts:/ s/resolve/mdns_minimal [NOTFOUND=return] resolve/' $f
+SystemdEnable avahi /usr/lib/systemd/system/avahi-daemon.service
+
+# VLC media player (Phonon backend)
+AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
+AddPackage vlc-plugins-all # Multi-platform MPEG, VCD/DVD, and DivX player - all plugins
+AddPackage phonon-qt6-vlc # Phonon VLC backend for Qt6
+AddPackage libdvdcss # Portable abstraction library for DVD decryption
 
 # Install plasma-meta
 AddPackage noto-fonts # Google Noto TTF fonts
@@ -9,10 +23,9 @@ AddPackage plasma-meta # Meta package to install KDE Plasma
 AddPackage pyside6 # Enables the use of Qt6 APIs in Python applications
 AddPackage cronie # Daemon that runs specified programs at scheduled times and related tools
 AddPackage tesseract-data-fra # Tesseract OCR data (fra)
-AddPackage phonon-qt6-vlc # Phonon VLC backend for Qt6
 AddPackage kde-applications-meta # Meta package for KDE Applications
 
-# SSDM manually
+# Desktop login manager
 AddPackage --foreign sddm-archlinux-theme-git # Archlinux Theme for SDDM
 CreateFile /etc/sddm.conf > /dev/null
 CopyFile /etc/sddm.conf.d/kde_settings.conf
