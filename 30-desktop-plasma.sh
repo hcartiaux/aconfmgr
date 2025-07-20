@@ -5,7 +5,7 @@ CopyFile /etc/X11/xorg.conf.d/00-keyboard.conf
 AddPackage nss-mdns # glibc plugin providing host name resolution via mDNS
 AddPackage avahi # Service Discovery for Linux using mDNS/DNS-SD (compatible with Bonjour)
 f="$(GetPackageOriginalFile filesystem /etc/nsswitch.conf)"
-sed -i '/^hosts:/ s/resolve/mdns_minimal [NOTFOUND=return] resolve/' $f
+sed -i '/^hosts:/ s/resolve/mdns_minimal [NOTFOUND=return] resolve/' "$f"
 SystemdEnable avahi /usr/lib/systemd/system/avahi-daemon.service
 
 # VLC media player (Phonon backend)
