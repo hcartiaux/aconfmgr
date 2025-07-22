@@ -1,5 +1,4 @@
 # SSH tools
-
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
 AddPackage sshuttle # Transparent proxy server that forwards all TCP packets over ssh
 AddPackage sshpass # Fool ssh into accepting an interactive password non-interactively
@@ -39,6 +38,13 @@ AddPackage virtualbox-guest-iso # The official VirtualBox Guest Additions ISO im
 
 # Languages
 
+## Ruby
+AddPackage ruby # An object-oriented language for quick and easy programming
+AddPackage ruby-irb # Interactive Ruby command-line tool for REPL (Read Eval Print Loop).
+AddPackage ruby-bundler # Manages an application's dependencies through its entire life, across many machines, systematically and repeatably
+AddPackage ruby-erb # An easy to use but powerful templating system for Ruby
+AddPackage ruby-rake # Make-like build tool implemented in Ruby
+
 ## Python
 AddPackage python-pip # The PyPA recommended tool for installing Python packages
 AddPackage python-virtualenv # Virtual Python Environment builder
@@ -49,18 +55,14 @@ AddPackage --foreign python-gitchangelog # Creates a changelog from git log hist
 AddPackage --foreign python-pssh # Parallel versions of the openssh tools ssh, scp, rsync, nuke, slurp
 
 ## Puppet
+AddPackage r10k # Provides a general purpose toolset for deploying Puppet environments and modules.
+AddPackage --foreign ruby-hiera-eyaml # OpenSSL Encryption backend for Hiera
 AddPackage --foreign python-pypuppetdb # Library for working with the PuppetDB REST API
 AddPackage --foreign puppet-lint # Check that your Puppet manifests conform to the style guide.
 
 ## Java
 AddPackage jdk-openjdk # OpenJDK Java 24 full runtime environment
 AddPackage icedtea-web # Additional components for OpenJDK - Browser plug-in and Web Start implementation
-
-## Ruby
-AddPackage ruby # An object-oriented language for quick and easy programming
-AddPackage ruby-irb # Interactive Ruby command-line tool for REPL (Read Eval Print Loop).
-AddPackage ruby-bundler # Manages an application's dependencies through its entire life, across many machines, systematically and repeatably
-AddPackage ruby-erb # An easy to use but powerful templating system for Ruby
 
 ## Node
 AddPackage nodejs # Evented I/O for V8 javascript ("Current" release)
