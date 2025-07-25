@@ -58,7 +58,7 @@ AddPackage --foreign findimagedupes # Tool to find visually similar or duplicate
 AddPackage --foreign bontmia # Bontmia (Backup Over Network To Multiple Incremental Archives)
 
 # Misc
-AddPackage --foreign pandoc-bin # Conversion between documentation formats
+AddPackage pandoc-cli # Conversion between documentation formats
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage tigervnc # Suite of VNC servers and clients based on the VNC 4 branch of TightVNC
 
