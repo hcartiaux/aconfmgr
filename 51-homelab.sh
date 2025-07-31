@@ -21,11 +21,6 @@ AddPackage hugo # Fast and Flexible Static Site Generator in Go
 ############
 AddPackage act # Run your GitHub Actions locally
 
-###############
-# dn42 project
-###############
-AddPackage --foreign ca-certificates-dn42 # dn42 root certificates for *.dn42 and 172.22.0.0/15
-
 ##############################################
 # OpenBSD cloud image build script dependency
 ##############################################
