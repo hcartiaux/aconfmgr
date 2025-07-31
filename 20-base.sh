@@ -42,7 +42,7 @@ AddPackage efitools # Tools for manipulating UEFI secure boot platforms
 AddPackage systemd-ukify # Combine kernel and initrd into a signed Unified Kernel Image
 AddPackage sbctl # Secure Boot key manager
 AddPackage sbsigntools # Tools to add signatures to EFI binaries and Drivers
-AddPackage --foreign systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
+CopyFile /etc/pacman.d/hooks/95-systemd-boot.hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 
 # ESP permissions
 CopyFile /efi/loader/loader.conf 700
