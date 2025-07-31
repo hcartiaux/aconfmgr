@@ -26,10 +26,10 @@ AddPackage tesseract-data-fra # Tesseract OCR data (fra)
 AddPackage kde-applications-meta # Meta package for KDE Applications
 
 # Desktop login manager
-AddPackage --foreign sddm-archlinux-theme-git # Archlinux Theme for SDDM
+AddPackage --foreign solarized-sddm-theme # A solarized SDDM theme
+CopyFile /usr/share/sddm/themes/solarized-sddm-theme/theme.conf.user
 CreateFile /etc/sddm.conf > /dev/null
 CopyFile /etc/sddm.conf.d/kde_settings.conf
-CopyFile /usr/share/sddm/themes/archlinux/theme.conf.user
 SystemdEnable sddm /usr/lib/systemd/system/sddm.service
 
 # Dictionaries
