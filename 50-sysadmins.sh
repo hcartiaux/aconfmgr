@@ -17,7 +17,6 @@ AddPackage git-filter-repo # Quickly rewrite git repository history (filter-bran
 AddPackage git-lfs # Git extension for versioning large files
 AddPackage tig # Text-mode interface for Git.
 AddPackage --foreign gitflow-cjs # CJS Edition of the git extensions to provide high-level repository operations for Vincent Driessen's branching model.
-AddPackage --foreign gitflow-zshcompletion-avh # ZSH completion support for gitflow (AVH-Edition).
 AddPackage tk # A windowing toolkit for use with tcl (git gui dependency)
 AddPackage lazygit # Simple terminal UI for git commands
 
