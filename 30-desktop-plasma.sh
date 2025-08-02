@@ -29,6 +29,7 @@ AddPackage kde-applications-meta # Meta package for KDE Applications
 AddPackage --foreign solarized-sddm-theme # A solarized SDDM theme
 CopyFile /usr/share/sddm/themes/solarized-sddm-theme/theme.conf.user
 CreateFile /etc/sddm.conf > /dev/null
+CopyFile /etc/sddm.conf.d/rootless-x11.conf
 CopyFile /etc/sddm.conf.d/kde_settings.conf
 SystemdEnable sddm /usr/lib/systemd/system/sddm.service
 
