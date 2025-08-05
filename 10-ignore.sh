@@ -17,7 +17,6 @@ IgnorePath /etc/audit/audit.rules
 IgnorePath /etc/ca-certificates/\*
 IgnorePath /etc/colord\*
 IgnorePath /etc/fonts/conf.d/\*
-IgnorePath /etc/fonts/conf.d/10-hinting-slight.conf
 IgnorePath /etc/group
 IgnorePath /etc/group-
 IgnorePath /etc/gshadow
