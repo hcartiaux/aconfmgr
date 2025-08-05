@@ -35,6 +35,10 @@ AddPackage virtualbox # Powerful x86 virtualization for enterprise as well as ho
 AddPackage virtualbox-host-dkms # VirtualBox Host kernel modules sources
 AddPackage virtualbox-guest-iso # The official VirtualBox Guest Additions ISO image
 
+# Containers
+AddPackage podman # Tool and library for running OCI-based containers in pods
+CopyFile /etc/containers/registries.conf.d/10-unqualified-search-registries.conf
+
 # Languages
 
 ## Ruby
