@@ -37,6 +37,7 @@ AddPackage virtualbox-guest-iso # The official VirtualBox Guest Additions ISO im
 
 # Containers
 AddPackage podman # Tool and library for running OCI-based containers in pods
+AddPackage podman-compose # A script to run docker-compose.yml using podman
 CopyFile /etc/containers/registries.conf.d/10-unqualified-search-registries.conf
 
 # Languages
