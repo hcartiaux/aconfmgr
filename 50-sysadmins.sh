@@ -86,14 +86,18 @@ AddPackage --foreign mkdocs-include-markdown-plugin # Mkdocs Markdown includer p
 AddPackage --foreign mkdocs-material-extensions # Markdown extension resources for MkDocs Material
 AddPackage --foreign python-markdown-include # Provides syntax for Python-Markdown for the inclusion of other Markdown documents
 
+# Vim
+AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
+AddPackage --foreign vim-puppet # Puppet language syntax highlighting for vim.
+
 # Neovim and its dependencies
 AddPackage neovim # Fork of Vim aiming to improve user experience, plugins, and GUIs
 AddPackage python-pynvim # Python client for Neovim
 AddPackage lua51 # Powerful lightweight programming language designed for extending applications
 AddPackage luarocks # Deployment and management system for Lua modules
+AddPackage ast-grep # CLI tool for code structural search, lint and rewriting
+AddPackage fd # Simple, fast and user-friendly alternative to find
 
 # Misc
 AddPackage parallel # A shell tool for executing jobs in parallel
 AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
-AddPackage ast-grep # CLI tool for code structural search, lint and rewriting
-AddPackage fd # Simple, fast and user-friendly alternative to find
