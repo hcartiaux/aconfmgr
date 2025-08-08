@@ -1,6 +1,7 @@
 # System
 AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parametersi
 AddPackage iotop # View I/O usage of processes
+AddPackage nvtop # GPUs process monitoring for AMD, Intel and NVIDIA
 AddPackage inetutils # A collection of common network programs
 AddPackage ethtool # Utility for controlling network drivers and hardware
 AddPackage lsof # Lists open files for running Unix processes
