@@ -68,6 +68,7 @@ IgnorePath /var/db/\*
 IgnorePath /var/lib/bluetooth/\*
 IgnorePath /var/lib/boltd/\*
 IgnorePath /var/lib/btrfs/\*
+IgnorePath /var/lib/cni/networks
 IgnorePath /var/lib/colord/\*
 IgnorePath /var/lib/containers
 IgnorePath /var/lib/dbus/machine-id /etc/machine-id
