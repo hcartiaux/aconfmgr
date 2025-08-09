@@ -64,7 +64,7 @@ function SystemdEnable() {
     fi
 
     if [[ "$type" != "system" && "$type" != "user" ]]; then
-        FatalError "Unkown type ${type}"
+        FatalError "Unknown type ${type}"
     fi
 
     local filename="${unit##*/}"
@@ -126,7 +126,7 @@ function SystemdMask() {
     local type="${2:-system}"
 
     if [[ "$type" != "system" && "$type" != "user" ]]; then
-        FatalError "Unkown type ${type}"
+        FatalError "Unknown type ${type}"
     fi
 
     CreateLink "/etc/systemd/${type}/${unit}" /dev/null
