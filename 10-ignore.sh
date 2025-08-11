@@ -1,3 +1,6 @@
+# Systemd
+IgnorePathsExcept /var/lib/systemd/ linger
+
 # Btrfs snapshots
 IgnorePath /.snapshots/\*
 
@@ -87,7 +90,6 @@ IgnorePath /var/lib/portables
 IgnorePath /var/lib/private
 IgnorePath /var/lib/sbctl/\*
 IgnorePath /var/lib/sddm\*
-IgnorePath /var/lib/systemd/\*
 IgnorePath /var/lib/texmf/\*
 IgnorePath /var/lib/tlp/rfkill_saved
 IgnorePath /var/lib/tpm2-tss/\*
