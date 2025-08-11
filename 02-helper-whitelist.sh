@@ -14,7 +14,7 @@ function IgnorePathsExcept() {
     # Ignore all paths in the given directory (first parameter)
     # that do not match the given whitelist (second parameter)
 
-    local search_dir=${1%/}
+    local search_dir="${1%/}"
     shift
     local white_list=("$@")
     local find_args=()
