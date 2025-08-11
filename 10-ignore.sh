@@ -1,5 +1,5 @@
 # Systemd
-IgnorePathsExcept /var/lib/systemd/ linger
+IgnorePathsExcept /var/lib/systemd 'linger' 'linger/*'
 
 # Btrfs snapshots
 IgnorePath /.snapshots/\*
