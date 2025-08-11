@@ -50,7 +50,6 @@ AddPackage tmux # Terminal multiplexer
 AddPackage the_silver_searcher # Code searching tool similar to Ack, but faster
 AddPackage jq # Command-line JSON processor
 AddPackage yq # Command-line YAML, XML, TOML processor - jq wrapper for YAML/XML/TOML documents
-AddPackage pandoc-cli # Conversion between documentation formats
 AddPackage pdftk # Command-line tool for working with PDFs
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage tigervnc # Suite of VNC servers and clients based on the VNC 4 branch of TightVNC
