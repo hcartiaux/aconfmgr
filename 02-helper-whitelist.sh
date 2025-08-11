@@ -14,11 +14,15 @@ function IgnorePathsExcept() {
     # Ignore all paths in the given directory (first parameter)
     # that do not match the given whitelist (second parameter)
 
-    local search_dir=$1
+    local search_dir=${1%/}
     shift
     local white_list=("$@")
     local find_args=()
     local ignore_path
+
+    if [ ! -d "$search_dir" ]; then
+        FatalError "The path ${search_dir} must be an existing directory\n"
+    fi
 
     for ignore_path in "${white_list[@]}"; do
         local base="$ignore_path"
