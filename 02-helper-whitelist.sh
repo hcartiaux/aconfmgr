@@ -43,8 +43,7 @@ function IgnorePathsExcept() {
         while read -r file; do
             if [[ -d "$file" ]]; then
                 IgnorePath "$file/*"
-            else
-                IgnorePath "$file"
             fi
+            IgnorePath "$file"
         done
 }
