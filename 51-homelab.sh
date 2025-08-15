@@ -1,7 +1,7 @@
 ############################
 # Infrastructure management
 ############################
-AddPackage opentofu # Lets you declaratively manage your cloud infrastructure
+AddPackage terraform # HashiCorp tool for building and updating infrastructure as code idempotently
 AddPackage tflint # A linter for Terraform code
 AddPackage scaleway-cli # Command line interface for Scaleway Cloud
 
