@@ -1,4 +1,7 @@
-AddPackage opentofu # Lets you declaratively manage your cloud infrastructure
+############################
+# Infrastructure management
+############################
+AddPackage terraform # HashiCorp tool for building and updating infrastructure as code idempotently
 AddPackage tflint # A linter for Terraform code
 AddPackage scaleway-cli # Command line interface for Scaleway Cloud
 
@@ -8,12 +11,24 @@ AddPackage cdrtools # Highly portable CD/DVD/BluRay command line recording softw
 AddPackage ansible # Official assortment of Ansible collections
 AddPackage ansible-lint # Checks playbooks for practices and behaviour that could potentially be improved.
 
-AddPackage act # Run your GitHub Actions locally
-
+###########
+# Homepage
+###########
 AddPackage hugo # Fast and Flexible Static Site Generator in Go
 
-# dn42 project
-AddPackage --foreign ca-certificates-dn42 # dn42 root certificates for *.dn42 and 172.22.0.0/15
+############
+# Github CI
+############
+AddPackage act # Run your GitHub Actions locally
 
+##############################################
 # OpenBSD cloud image build script dependency
+##############################################
 AddPackage signify # OpenBSD tool to cryptographically sign and verify files
+
+#########
+# 1kl-os
+#########
+AddPackage qemu-system-riscv # QEMU system emulator for RISC-V
+AddPackage qemu-system-riscv-firmware # Firmware for QEMU system emulator for RISC-V
+AddPackage lld # Linker from the LLVM project

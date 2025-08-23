@@ -1,3 +1,6 @@
+# Systemd
+IgnorePathsExcept /var/lib/systemd 'linger' 'linger/*'
+
 # Btrfs snapshots
 IgnorePath /.snapshots/\*
 
@@ -13,10 +16,10 @@ IgnorePath /efi/loader/random-seed
 
 # /etc
 IgnorePath /etc/adjtime
+IgnorePath /etc/audit/audit.rules
 IgnorePath /etc/ca-certificates/\*
 IgnorePath /etc/colord\*
 IgnorePath /etc/fonts/conf.d/\*
-IgnorePath /etc/fonts/conf.d/10-hinting-slight.conf
 IgnorePath /etc/group
 IgnorePath /etc/group-
 IgnorePath /etc/gshadow
@@ -57,19 +60,20 @@ IgnorePath /usr/lib/systemd/\*
 IgnorePath /usr/lib/udev/hwdb.bin
 IgnorePath /usr/share/applications/mimeinfo.cache
 IgnorePath /usr/share/glib-2.0/\*
-IgnorePath /usr/share/icons/Adwaita/icon-theme.cache
-IgnorePath /usr/share/icons/AdwaitaLegacy/icon-theme.cache
-IgnorePath /usr/share/icons/hicolor/icon-theme.cache
+IgnorePath /usr/share/icons/\*/\*.cache
 IgnorePath /usr/share/info/dir
 IgnorePath /usr/share/mime/\*
 IgnorePath /usr/share/texmf-dist/\*
+IgnorePath /usr/share/vim/vimfiles/doc/tags
 
 # /var
 IgnorePath /var/db/\*
 IgnorePath /var/lib/bluetooth/\*
 IgnorePath /var/lib/boltd/\*
 IgnorePath /var/lib/btrfs/\*
+IgnorePath /var/lib/cni/networks
 IgnorePath /var/lib/colord/\*
+IgnorePath /var/lib/containers
 IgnorePath /var/lib/dbus/machine-id /etc/machine-id
 IgnorePath /var/lib/dkms/\*
 IgnorePath /var/lib/fwupd/\*
@@ -86,7 +90,6 @@ IgnorePath /var/lib/portables
 IgnorePath /var/lib/private
 IgnorePath /var/lib/sbctl/\*
 IgnorePath /var/lib/sddm\*
-IgnorePath /var/lib/systemd/\*
 IgnorePath /var/lib/texmf/\*
 IgnorePath /var/lib/tlp/rfkill_saved
 IgnorePath /var/lib/tpm2-tss/\*

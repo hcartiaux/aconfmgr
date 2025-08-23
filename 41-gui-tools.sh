@@ -23,6 +23,3 @@ AddPackage telegram-desktop # Official Telegram Desktop client
 AddPackage syncthing # Open Source Continuous Replication / Cluster Synchronization Thing
 AddPackage --foreign screen-message # Displays a short text fullscreen as large and as quickly as possible.
 AddPackage --foreign luniistore # Manage your Lunii's My Fabulous Storyteller content or buy new ones
-AddPackage --foreign yed # Very powerful graph editor written in java
-
-

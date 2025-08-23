@@ -1,3 +1,5 @@
-#AddUser hcartiaux "$(GetPassword hcartiaux)" 1000 1000 x 'Hyacinthe Cartiaux' /home/hcartiaux /usr/bin/zsh ''
-#AddUser hcartiaux.perso "$(GetPassword hcartiaux.perso)" 1000 1000 x 'Hyacinthe Cartiaux' /home/hcartiaux /usr/bin/zsh ''
-AddUserToGroup hcartiaux wheel
+for user in hcartiaux hcartiaux.perso; do
+    #AddUser "${user}" "$(GetPassword $user)" 1000 1000 x 'Hyacinthe Cartiaux' "/home/${user}" /usr/bin/zsh ''
+    AddUserToGroup "${user}" wheel
+    CreateFile "/var/lib/systemd/linger/${user}" > /dev/null
+done

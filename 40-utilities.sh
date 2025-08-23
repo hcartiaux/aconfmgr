@@ -1,16 +1,23 @@
-# System
-AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parametersi
+# System monitoring
+AddPackage htop # Interactive process viewer
 AddPackage iotop # View I/O usage of processes
-AddPackage inetutils # A collection of common network programs
-AddPackage ethtool # Utility for controlling network drivers and hardware
+AddPackage nvtop # GPUs process monitoring for AMD, Intel and NVIDIA
+AddPackage glances # CLI curses-based monitoring tool
 AddPackage lsof # Lists open files for running Unix processes
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
-AddPackage htop # Interactive process viewer
-AddPackage ncdu # Disk usage analyzer with an ncurses interface
+
+# Storage
+AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parametersi
 AddPackage sg3_utils # Generic SCSI utilities
+AddPackage ncdu # Disk usage analyzer with an ncurses interface
 AddPackage plocate # Alternative to locate, faster and compatible with mlocate's database.
+CopyFile /etc/updatedb.conf
+# Backup
+AddPackage --foreign bontmia # Bontmia (Backup Over Network To Multiple Incremental Archives)
 
 # Networking
+AddPackage inetutils # A collection of common network programs
+AddPackage ethtool # Utility for controlling network drivers and hardware
 AddPackage nmap # Utility for network discovery and security auditing
 AddPackage tcpdump # Powerful command-line packet analyzer
 AddPackage iperf3 # TCP, UDP, and SCTP network bandwidth measurement tool
@@ -23,20 +30,9 @@ AddPackage openldap # Lightweight Directory Access Protocol (LDAP) client and se
 AddPackage rtorrent # Ncurses BitTorrent client based on libTorrent
 
 # Compression
+AddPackage unzip # For extracting and viewing files in .zip archives
 AddPackage unrar # The RAR uncompression program
 AddPackage 7zip # File archiver for extremely high compression
-
-# CLI tools
-AddPackage tmux # Terminal multiplexer
-AddPackage the_silver_searcher # Code searching tool similar to Ack, but faster
-AddPackage yq # Command-line YAML, XML, TOML processor - jq wrapper for YAML/XML/TOML documents
-AddPackage jq # Command-line JSON processor
-AddPackage txt2man # Converts flat ASCII text to man page format
-AddPackage pdftk # Command-line tool for working with PDFs
-
-# Editors
-AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
-AddPackage --foreign vim-puppet # Puppet language syntax highlighting for vim.
 
 # Latex
 AddPackage texlive-meta # Metapackage to install Tex Live
@@ -48,10 +44,13 @@ AddPackage bc # An arbitrary precision calculator language
 # Image files manipulation
 AddPackage jpegoptim # Jpeg optimisation utility
 AddPackage optipng # Compresses PNG files to a smaller size, without losing any information.
-AddPackage --foreign findimagedupes # Tool to find visually similar or duplicate images
 
-# Misc
-AddPackage --foreign pandoc-bin # Conversion between documentation formats
+# Misc CLI tools
+AddPackage tmux # Terminal multiplexer
+AddPackage the_silver_searcher # Code searching tool similar to Ack, but faster
+AddPackage jq # Command-line JSON processor
+AddPackage yq # Command-line YAML, XML, TOML processor - jq wrapper for YAML/XML/TOML documents
+AddPackage pdftk # Command-line tool for working with PDFs
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage tigervnc # Suite of VNC servers and clients based on the VNC 4 branch of TightVNC
-
+AddPackage txt2man # Converts flat ASCII text to man page format

@@ -6,7 +6,6 @@ AddPackage linux-firmware # Firmware files for Linux
 AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
 AddPackage linux-lts # The LTS Linux kernel and modules
 AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
-AddPackage intel-ucode # Microcode update files for Intel CPUs
 AddPackage man-db # A utility for reading man pages
 
 CopyFile /etc/fstab
@@ -28,10 +27,14 @@ echo "kernel.sysrq = 1" > "$(CreateFile /etc/sysctl.d/99-sysrq.conf)"
 # Btrfs tools
 AddPackage btrfs-progs # Btrfs filesystem utilities
 AddPackage compsize # Calculate compression ratio of a set of files on Btrfs
+AddPackage duperemove # Btrfs extent deduplication utility
 AddPackage snapper # A tool for managing BTRFS and LVM snapshots
 AddPackage snap-pac # Pacman hooks that use snapper to create pre/post btrfs snapshots like openSUSE's YaST
 CopyFile /etc/conf.d/snapper
 CopyFile /etc/snapper/configs/root 640
+CopyFile /etc/snapper/configs/home 640
+SystemdEnable snapper /usr/lib/systemd/system/snapper-cleanup.timer
+SystemdEnable snapper /usr/lib/systemd/system/snapper-timeline.timer
 
 # UEFI and Secure Boot
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
@@ -39,7 +42,7 @@ AddPackage efitools # Tools for manipulating UEFI secure boot platforms
 AddPackage systemd-ukify # Combine kernel and initrd into a signed Unified Kernel Image
 AddPackage sbctl # Secure Boot key manager
 AddPackage sbsigntools # Tools to add signatures to EFI binaries and Drivers
-AddPackage --foreign systemd-boot-pacman-hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
+CopyFile /etc/pacman.d/hooks/95-systemd-boot.hook # Pacman hook to upgrade systemd-boot after systemd upgrade.
 
 # ESP permissions
 CopyFile /efi/loader/loader.conf 700
@@ -67,6 +70,7 @@ IgnorePath /etc/wpa_supplicant/\*
 CopyFile /etc/makepkg.conf
 CopyFile /etc/pacman.conf
 AddPackage devtools # Tools for Arch Linux package maintainers
+AddPackage arch-signoff # Sign off Arch Linux testing packages
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
@@ -80,3 +84,4 @@ AddPackage apparmor # Mandatory Access Control (MAC) using Linux Security Module
 CopyFile /etc/apparmor/parser.conf
 CopyFile /etc/cmdline.d/apparmor.conf
 SystemdEnable apparmor /usr/lib/systemd/system/apparmor.service
+SystemdEnable audit /usr/lib/systemd/system/auditd.service
