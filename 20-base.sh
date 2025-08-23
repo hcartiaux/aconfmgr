@@ -70,6 +70,7 @@ IgnorePath /etc/wpa_supplicant/\*
 CopyFile /etc/makepkg.conf
 CopyFile /etc/pacman.conf
 AddPackage devtools # Tools for Arch Linux package maintainers
+AddPackage arch-signoff # Sign off Arch Linux testing packages
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
