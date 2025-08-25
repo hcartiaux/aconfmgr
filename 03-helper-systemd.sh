@@ -94,7 +94,7 @@ function SystemdEnable() {
 
         if grep -q WantedBy= "$unit_source"; then
             IFS=$' \n\t'
-            mapfile -t aliases < <(sed -nE '/^WantedBy=/ {s/^WantedBy=//; s/ /\n/gp}' "$unit_source")
+            mapfile -t wantedby < <(sed -nE '/^WantedBy=/ {s/^WantedBy=//; s/ /\n/gp}' "$unit_source")
             IFS="$oIFS"
             for target in "${wantedby[@]}"; do
                 CreateLink "/etc/systemd/${type}/${target}.wants/${name}" "${unit}"
