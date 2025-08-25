@@ -3,6 +3,7 @@
 
 # Array of created files and symlinks under /etc/systemd
 declare -a systemd_files
+mapfile -t systemd_files < <(find /etc/systemd -maxdepth 1 -name "*.conf" -printf "%f\n")
 
 # SystemdEnable
 #     [--no-alias|--no-wanted-by]

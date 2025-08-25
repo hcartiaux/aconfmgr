@@ -24,6 +24,10 @@ sed -i 's/^#\(en_US.UTF-8\)/\1/g' "$f"
 # Enable Magic SysRq
 echo "kernel.sysrq = 1" > "$(CreateFile /etc/sysctl.d/99-sysrq.conf)"
 
+# Systemd
+f="$(GetPackageOriginalFile systemd /etc/systemd/journald.conf)"
+sed -i 's/^#SystemMaxUse=/SystemMaxUse=512M/g' "$f"
+
 # Btrfs tools
 AddPackage btrfs-progs # Btrfs filesystem utilities
 AddPackage compsize # Calculate compression ratio of a set of files on Btrfs
