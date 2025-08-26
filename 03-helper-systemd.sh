@@ -3,6 +3,7 @@
 
 # Array of created files and symlinks under /etc/systemd
 declare -a systemd_files
+mapfile -t systemd_files < <(find /etc/systemd -maxdepth 1 -name "*.conf" -printf "%f\n")
 
 # SystemdEnable
 #     [--no-alias|--no-wanted-by]
@@ -90,10 +91,9 @@ function SystemdEnable() {
     if [[ $do_wanted_by -eq 1 ]]; then
         local name="${name_override:-${filename}}"
         local -a wantedby
-
         if grep -q WantedBy= "$unit_source"; then
             IFS=$' \n\t'
-            mapfile -t aliases < <(sed -nE '/^WantedBy=/ {s/^WantedBy=//; s/ /\n/gp}' "$unit_source")
+            mapfile -t wantedby < <(sed -nE '/^WantedBy=/ {s/^WantedBy=//; s/ /\n/g; p}' "$unit_source")
             IFS="$oIFS"
             for target in "${wantedby[@]}"; do
                 CreateLink "/etc/systemd/${type}/${target}.wants/${name}" "${unit}"
@@ -108,7 +108,7 @@ function SystemdEnable() {
 
         if grep -q Alias= "$unit_source"; then
             IFS=$' \n\t'
-            mapfile -t aliases < <(sed -nE '/^Aliases=/ {s/^Aliases=//; s/ /\n/gp}' "$unit_source")
+            mapfile -t aliases < <(sed -nE '/^Aliases=/ {s/^Aliases=//; s/ /\n/g; p}' "$unit_source")
             IFS="$oIFS"
             for target in "${aliases[@]}"; do
                 CreateLink "/etc/systemd/${type}/${target}" "${unit}"
