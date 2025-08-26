@@ -17,4 +17,24 @@ if [ -n "${pci_id}" ] ; then
     # TLP configuration (installed in 22-power-mgmt)
     echo "RUNTIME_PM_ENABLE=\"${pci_id}\"" > "$(CreateFile /etc/tlp.d/28-nvidia.conf)"
 
+    # # Verify that the Nvidia GPU can switch to D3Cold state
+    #
+    # $ cat /proc/driver/nvidia/gpus/0000\:01\:00.0/power
+    # Runtime D3 status:          Enabled (fine-grained)
+    # Video Memory:               Active
+    #
+    # GPU Hardware Support:
+    #  Video Memory Self Refresh: Supported
+    #  Video Memory Off:          Supported
+    #
+    # S0ix Power Management:
+    #  Platform Support:          Supported
+    #  Status:                    Disabled
+    #
+    # Notebook Dynamic Boost:     Not Supported
+    #
+    # $ cat /sys/class/drm/card0/device/power_state
+    # D3cold
+    #
+
 fi
