@@ -5,6 +5,7 @@ AddPackage nvtop # GPUs process monitoring for AMD, Intel and NVIDIA
 AddPackage glances # CLI curses-based monitoring tool
 AddPackage lsof # Lists open files for running Unix processes
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
+AddPackage dool # A versatile resource statistics tool
 
 # Storage
 AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parametersi
