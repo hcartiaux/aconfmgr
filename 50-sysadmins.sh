@@ -58,7 +58,6 @@ AddPackage python-flake8 # The modular source code checker: pep8, pyflakes and c
 AddPackage python-opengl # The cross platform Python binding to OpenGL and related APIs
 AddPackage python-pygame # Python game library
 AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
-AddPackage --foreign python-pssh # Parallel versions of the openssh tools ssh, scp, rsync, nuke, slurp
 
 ## Puppet
 AddPackage r10k # Provides a general purpose toolset for deploying Puppet environments and modules.
