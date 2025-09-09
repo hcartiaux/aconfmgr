@@ -98,6 +98,9 @@ AddPackage luarocks # Deployment and management system for Lua modules
 AddPackage ast-grep # CLI tool for code structural search, lint and rewriting
 AddPackage fd # Simple, fast and user-friendly alternative to find
 
+# Zed editor
+AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
+
 # Misc
 AddPackage parallel # A shell tool for executing jobs in parallel
 AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
