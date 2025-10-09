@@ -45,6 +45,7 @@ IgnorePath /etc/subgid-
 IgnorePath /etc/subuid
 IgnorePath /etc/subuid-
 IgnorePath /etc/texmf/\*
+IgnorePath /etc/userdb
 IgnorePath /etc/xml/catalog
 IgnorePath /etc/wireguard/\*key
 IgnorePath /etc/.updated
