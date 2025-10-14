@@ -5,6 +5,7 @@ AddPackage nvtop # GPUs process monitoring for AMD, Intel and NVIDIA
 AddPackage glances # CLI curses-based monitoring tool
 AddPackage lsof # Lists open files for running Unix processes
 AddPackage strace # A diagnostic, debugging and instructional userspace tracer
+AddPackage dool # A versatile resource statistics tool
 
 # Storage
 AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parametersi
@@ -47,6 +48,7 @@ AddPackage optipng # Compresses PNG files to a smaller size, without losing any 
 
 # Misc CLI tools
 AddPackage tmux # Terminal multiplexer
+AddPackage screen # Full-screen window manager that multiplexes a physical terminal
 AddPackage the_silver_searcher # Code searching tool similar to Ack, but faster
 AddPackage jq # Command-line JSON processor
 AddPackage yq # Command-line YAML, XML, TOML processor - jq wrapper for YAML/XML/TOML documents
