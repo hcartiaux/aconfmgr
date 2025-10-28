@@ -53,6 +53,7 @@ AddPackage ruby-term-ansicolor # A ruby library that colors strings using ANSI e
 AddPackage python-pip # The PyPA recommended tool for installing Python packages
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-rich # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
+AddPackage python-dnspython # A DNS toolkit for Python
 AddPackage python-xmljson # Converts XML into JSON/Python dicts/arrays and vice-versa.
 AddPackage python-flake8 # The modular source code checker: pep8, pyflakes and co
 AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
