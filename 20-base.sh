@@ -71,6 +71,10 @@ SystemdEnable networkmanager /usr/lib/systemd/system/NetworkManager.service
 # CopyFile /etc/wpa_supplicant/wpa_supplicant-wired-enp46s0u2u4.conf 700
 IgnorePath /etc/wpa_supplicant/\*
 
+# Eduroam CA file
+CopyFile /etc/ssl/eduroam.pem
+
+
 # Archlinux packaging
 CopyFile /etc/makepkg.conf
 CopyFile /etc/pacman.conf
