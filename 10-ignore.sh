@@ -16,7 +16,8 @@ IgnorePath /efi/loader/random-seed
 
 # /etc
 IgnorePath /etc/adjtime
-IgnorePath /etc/audit/audit.rules
+IgnorePath /etc/audit/\*
+IgnorePath /etc/audisp
 IgnorePath /etc/ca-certificates/\*
 IgnorePath /etc/colord\*
 IgnorePath /etc/fonts/conf.d/\*
