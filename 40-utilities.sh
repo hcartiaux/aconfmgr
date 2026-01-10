@@ -45,6 +45,7 @@ AddPackage bc # An arbitrary precision calculator language
 # Image files manipulation
 AddPackage jpegoptim # Jpeg optimisation utility
 AddPackage optipng # Compresses PNG files to a smaller size, without losing any information.
+AddPackage --foreign findimagedupes # Tool to find visually similar or duplicate images
 
 # Misc CLI tools
 AddPackage tmux # Terminal multiplexer

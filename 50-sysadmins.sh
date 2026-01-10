@@ -61,6 +61,7 @@ AddPackage --foreign python-gitchangelog # Creates a changelog from git log hist
 ## Puppet
 AddPackage r10k # Provides a general purpose toolset for deploying Puppet environments and modules.
 AddPackage --foreign ruby-hiera-eyaml # OpenSSL Encryption backend for Hiera
+AddPackage --foreign python-pypuppetdb # Library for working with the PuppetDB REST API
 AddPackage --foreign puppet-lint # Check that your Puppet manifests conform to the style guide.
 
 ## Java
@@ -102,5 +103,6 @@ AddPackage fd # Simple, fast and user-friendly alternative to find
 AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 
 # Misc
+AddPackage gnuplot # Plotting package which outputs to X11, PostScript, PNG, GIF, and others
 AddPackage parallel # A shell tool for executing jobs in parallel
 AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
