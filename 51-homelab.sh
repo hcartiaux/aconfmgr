@@ -26,6 +26,11 @@ AddPackage act # Run your GitHub Actions locally
 ##############################################
 AddPackage signify # OpenBSD tool to cryptographically sign and verify files
 
+###############
+# dn42 project
+###############
+AddPackage --foreign ca-certificates-dn42 # dn42 root certificates for *.dn42 and 172.22.0.0/15
+
 #########
 # 1kl-os
 #########
