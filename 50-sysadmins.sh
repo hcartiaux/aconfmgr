@@ -102,5 +102,6 @@ AddPackage fd # Simple, fast and user-friendly alternative to find
 AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 
 # Misc
+AddPackage gnuplot # Plotting package which outputs to X11, PostScript, PNG, GIF, and others
 AddPackage parallel # A shell tool for executing jobs in parallel
 AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
