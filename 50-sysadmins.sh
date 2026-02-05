@@ -39,6 +39,10 @@ AddPackage podman # Tool and library for running OCI-based containers in pods
 AddPackage podman-compose # A script to run docker-compose.yml using podman
 CopyFile /etc/containers/registries.conf.d/10-unqualified-search-registries.conf
 
+# Terminal screencast recording
+AddPackage asciinema # Record and share terminal sessions
+AddPackage --foreign asciinema-agg # asciinema gif generator
+
 # Languages
 
 ## Ruby
@@ -54,6 +58,7 @@ AddPackage python-pip # The PyPA recommended tool for installing Python packages
 AddPackage python-virtualenv # Virtual Python Environment builder
 AddPackage python-rich # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
 AddPackage python-dnspython # A DNS toolkit for Python
+AddPackage python-ldap # LDAP client API for Python
 AddPackage python-xmljson # Converts XML into JSON/Python dicts/arrays and vice-versa.
 AddPackage python-flake8 # The modular source code checker: pep8, pyflakes and co
 AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
@@ -74,7 +79,7 @@ AddPackage npm # JavaScript package manager
 
 ## Build dependencies
 AddPackage cmake # A cross-platform open-source make system
-AddPackage openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
+AddPackage --foreign openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
 
 # Mkdocs
 AddPackage mkdocs # Project documentation with Markdown
