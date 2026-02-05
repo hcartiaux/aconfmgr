@@ -3,8 +3,8 @@ pci_id=$(lspci | sed -n 's/\([^ ]*\) 3D controller: NVIDIA.*/\1/p' | xargs)
 if [ -n "${pci_id}" ] ; then
 
     # Nvidia driver support
-    AddPackage nvidia # NVIDIA kernel modules
-    AddPackage nvidia-lts # NVIDIA drivers for linux-lts
+    AddPackage nvidia-open # NVIDIA open kernel modules
+    AddPackage nvidia-open-lts # NVIDIA open kernel modules for linux-lts
     AddPackage nvidia-prime # NVIDIA Prime Render Offload configuration and utilities
     AddPackage nvidia-utils # NVIDIA drivers utilities
 
