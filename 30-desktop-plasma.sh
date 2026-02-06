@@ -19,6 +19,7 @@ AddPackage qt6-multimedia-ffmpeg # FFMpeg backend for qt6-multimedia
 AddPackage noto-fonts # Google Noto TTF fonts
 AddPackage pipewire-jack # Low-latency audio/video router and processor - JACK replacement
 AddPackage plasma-meta # Meta package to install KDE Plasma
+AddPackage konsole # KDE terminal emulator
 
 # Desktop login manager
 CopyFile /etc/sddm.conf.d/wayland.conf
