@@ -1,9 +1,13 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
 # /dev/mapper/cryptroot
-UUID=b359087d-534b-46f9-839d-d37d37131eb1	/		btrfs		rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/@	0 0
+UUID=aa2e3b97-869a-42ee-9d37-7bde629636c4	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/@	0 0
 
 # /dev/mapper/cryptroot
-UUID=b359087d-534b-46f9-839d-d37d37131eb1	/home		btrfs		rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/@home	0 0
+UUID=aa2e3b97-869a-42ee-9d37-7bde629636c4	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/@home	0 0
 
 # /dev/nvme0n1p1
-UUID=F4B9-E80A					/efi		vfat		rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+UUID=E76C-323F      	/efi      	vfat      	rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
