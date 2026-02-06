@@ -30,8 +30,6 @@ sed -i 's/^#SystemMaxUse=/SystemMaxUse=512M/g' "$f"
 
 # Btrfs tools
 AddPackage btrfs-progs # Btrfs filesystem utilities
-AddPackage compsize # Calculate compression ratio of a set of files on Btrfs
-AddPackage duperemove # Btrfs extent deduplication utility
 AddPackage snapper # A tool for managing BTRFS and LVM snapshots
 AddPackage snap-pac # Pacman hooks that use snapper to create pre/post btrfs snapshots like openSUSE's YaST
 CopyFile /etc/conf.d/snapper
@@ -75,9 +73,6 @@ IgnorePath /etc/wpa_supplicant/\*
 # Archlinux packaging
 CopyFile /etc/makepkg.conf
 CopyFile /etc/pacman.conf
-AddPackage devtools # Tools for Arch Linux package maintainers
-AddPackage arch-signoff # Sign off Arch Linux testing packages
-AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper written in go.
 
