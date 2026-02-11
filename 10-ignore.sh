@@ -77,6 +77,7 @@ IgnorePath /var/lib/btrfs/\*
 IgnorePath /var/lib/cni/networks
 IgnorePath /var/lib/colord/\*
 IgnorePath /var/lib/containers
+IgnorePath /var/lib/cvmfs
 IgnorePath /var/lib/dbus/machine-id /etc/machine-id
 IgnorePath /var/lib/dkms/\*
 IgnorePath /var/lib/flatpak/\*
