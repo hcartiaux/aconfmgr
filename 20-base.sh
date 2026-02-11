@@ -83,6 +83,7 @@ AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper wri
 
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 SystemdEnable pacman-contrib /usr/lib/systemd/system/paccache.timer
+AddPackage namcap # A Pacman package analyzer
 
 # Security
 CopyFile /etc/sudoers
