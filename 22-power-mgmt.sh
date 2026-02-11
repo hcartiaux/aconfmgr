@@ -3,3 +3,4 @@ AddPackage powertop # A tool to diagnose issues with power consumption and power
 
 AddPackage tlp # Linux Advanced Power Management
 SystemdEnable tlp /usr/lib/systemd/system/tlp.service
+AddPackage tlp-pd # Linux Advanced Power Management - Power Profiles Daemon
