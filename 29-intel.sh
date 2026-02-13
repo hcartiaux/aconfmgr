@@ -12,8 +12,8 @@ AddPackage libva-utils # Intel VA-API Media Applications and Scripts for libva
 AddPackage vulkan-intel # Open-source Vulkan driver for Intel GPUs
 
 # GPU sycl backend
-AddPackage intel-compute-runtime # Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver
-AddPackage intel-oneapi-basekit # Intel oneAPI Base Toolkit for Linux
+# AddPackage intel-compute-runtime # Intel(R) Graphics Compute Runtime for oneAPI Level Zero and OpenCL(TM) Driver
+# AddPackage intel-oneapi-basekit # Intel oneAPI Base Toolkit for Linux
 
 # # Verify that the sycl backend is functional
 # source /opt/intel/oneapi/setvars.sh
@@ -46,7 +46,7 @@ AddPackage intel-oneapi-basekit # Intel oneAPI Base Toolkit for Linux
 # [opencl:cpu][opencl:1] Intel(R) OpenCL, Intel(R) Core(TM) Ultra 7 265H OpenCL 3.0 (Build 0) [2024.18.12.0.05_160000]
 # [opencl:gpu][opencl:2] Intel(R) OpenCL Graphics, Intel(R) Arc(TM) Graphics OpenCL 3.0 NEO  [26.05.37020]
 
-AddPackage clinfo # Simple OpenCL application that enumerates all available platform and device properties
+# AddPackage clinfo # Simple OpenCL application that enumerates all available platform and device properties
 
 # clinfo -l
 # Platform #0: Intel(R) FPGA Emulation Platform for OpenCL(TM)
