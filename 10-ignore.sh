@@ -90,6 +90,7 @@ IgnorePath /var/lib/NetworkManager/\*
 IgnorePath /var/lib/openldap/\*
 IgnorePath /var/lib/pacman/\*
 IgnorePath /var/lib/passim/\*
+IgnorePath /var/lib/plasmalogin/\*
 IgnorePath /var/lib/plocate/plocate.db
 IgnorePath /var/lib/portables
 IgnorePath /var/lib/private

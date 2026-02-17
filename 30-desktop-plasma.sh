@@ -27,12 +27,7 @@ AddPackage tesseract-data-fra # Tesseract OCR data (fra)
 AddPackage kde-applications-meta # Meta package for KDE Applications
 
 # Desktop login manager
-AddPackage --foreign solarized-sddm-theme # A solarized SDDM theme
-CopyFile /usr/share/sddm/themes/solarized-sddm-theme/theme.conf.user
-CreateFile /etc/sddm.conf > /dev/null
-CopyFile /etc/sddm.conf.d/wayland.conf
-CopyFile /etc/sddm.conf.d/kde_settings.conf
-SystemdEnable sddm /usr/lib/systemd/system/sddm.service
+SystemdEnable plasma-login-manager /usr/lib/systemd/system/plasmalogin.service
 
 # Dictionaries
 AddPackage aspell-en # English dictionary for aspell
