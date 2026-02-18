@@ -2,6 +2,7 @@ AddPackage bash-completion # Programmable completion for the bash shell
 
 AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
 AddPackage zsh-completions # Additional completion definitions for Zsh
+AddPackage zsh-autosuggestions # Fish-like autosuggestions for zsh
 AddPackage zsh-syntax-highlighting # Fish shell like syntax highlighting for Zsh
 
 AddPackage powerline # Statuslines and prompts for several applications including vim, zsh, bash, tmux, IPython, Awesome, i3 and Qtile
