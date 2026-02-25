@@ -1,4 +1,4 @@
-# Base
+# Base packages
 AddPackage base # Minimal package set to define a basic Arch Linux installation
 AddPackage base-devel # Basic tools to build Arch Linux packages
 AddPackage linux # The Linux kernel and modules
@@ -6,8 +6,8 @@ AddPackage linux-firmware # Firmware files for Linux
 AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
 AddPackage linux-lts # The LTS Linux kernel and modules
 AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
-AddPackage man-db # A utility for reading man pages
 
+# Base system config
 CopyFile /etc/fstab
 CopyFile /etc/hostname
 CopyFile /etc/locale.conf
@@ -16,6 +16,10 @@ CopyFile /etc/cmdline.d/root.conf
 CopyFile /etc/cmdline.d/default.conf
 CopyFile /etc/vconsole.conf
 CopyFile /etc/issue
+
+# System manual
+AddPackage man-db # A utility for reading man pages
+AddPackage man-pages # Linux man pages
 
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
