@@ -85,6 +85,7 @@ AddPackage npm # JavaScript package manager
 
 ## Build dependencies
 AddPackage cmake # A cross-platform open-source make system
+AddPackage meson # High productivity build system
 AddPackage --foreign openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
 
 # Mkdocs
