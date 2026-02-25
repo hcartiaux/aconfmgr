@@ -27,6 +27,7 @@ AddPackage tesseract-data-fra # Tesseract OCR data (fra)
 AddPackage kde-applications-meta # Meta package for KDE Applications
 
 # Desktop login manager
+CopyFile /etc/plasmalogin.conf
 SystemdEnable plasma-login-manager /usr/lib/systemd/system/plasmalogin.service
 
 # Dictionaries
