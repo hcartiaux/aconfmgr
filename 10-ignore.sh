@@ -67,6 +67,7 @@ IgnorePath /usr/share/icons/\*/\*.cache
 IgnorePath /usr/share/info/dir
 IgnorePath /usr/share/mime/\*
 IgnorePath /usr/share/texmf-dist/\*
+IgnorePath /usr/share/texmf/ls-R/\*
 IgnorePath /usr/share/vim/vimfiles/doc/tags
 
 # /var
