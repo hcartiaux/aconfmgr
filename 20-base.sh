@@ -88,6 +88,7 @@ AddPackage nvchecker # New version checker for software releases
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 SystemdEnable pacman-contrib /usr/lib/systemd/system/paccache.timer
 AddPackage namcap # A Pacman package analyzer
+AddPackage fakechroot # Gives a fake chroot environment
 
 # Security
 CopyFile /etc/sudoers
