@@ -72,6 +72,7 @@ IgnorePath /usr/share/vim/vimfiles/doc/tags
 
 # /var
 IgnorePath /var/db/\*
+IgnorePath /var/lib/archbuild/\*
 IgnorePath /var/lib/bluetooth/\*
 IgnorePath /var/lib/boltd/\*
 IgnorePath /var/lib/btrfs/\*
