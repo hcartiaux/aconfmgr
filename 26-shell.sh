@@ -1,5 +1,9 @@
 AddPackage bash-completion # Programmable completion for the bash shell
 
+AddPackage bats # Bash Automated Testing System
+AddPackage bats-assert # Common assertions for Bats
+AddPackage bats-file # Common filesystem assertions for Bats
+
 AddPackage zsh # A very advanced and programmable command interpreter (shell) for UNIX
 AddPackage zsh-completions # Additional completion definitions for Zsh
 AddPackage zsh-autosuggestions # Fish-like autosuggestions for zsh
