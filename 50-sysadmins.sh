@@ -103,6 +103,7 @@ AddPackage --foreign mkdocs-git-revision-date-localized-plugin # MkDocs plugin t
 AddPackage --foreign mkdocs-include-markdown-plugin # Mkdocs Markdown includer plugin.
 AddPackage --foreign mkdocs-material-extensions # Markdown extension resources for MkDocs Material
 AddPackage --foreign python-markdown-include # Provides syntax for Python-Markdown for the inclusion of other Markdown documents
+AddPackage --foreign python-mdx_truly_sane_lists # Extension for Python-Markdown that makes lists truly sane. Custom indents for nested lists and fix for messy linebreaks.
 
 # Vim
 AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
