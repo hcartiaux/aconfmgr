@@ -3,9 +3,13 @@
 #
 function Source() {
     for file in $@; do
-        LogEnter 'Sourcing %s...\n' "$(Color C "%q" "$config_dir/$file")"
-        source "$config_dir/$file"
-        LogLeave ''
+        if [[ -f "$config_dir/$file" ]]; then
+            LogEnter 'Sourcing %s...\n' "$(Color C "%q" "$config_dir/$file")"
+            source "$config_dir/$file"
+            LogLeave ''
+        else
+            ConfigWarning "Missing file %s\n" "$(Color C "%q" "$config_dir/$file")" >&2
+        fi
     done;
 }
 
