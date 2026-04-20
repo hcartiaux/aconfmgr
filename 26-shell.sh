@@ -1,4 +1,5 @@
 AddPackage bash-completion # Programmable completion for the bash shell
+AddPackage bash-language-server # Bash language server implementation based on Tree Sitter and its grammar for Bash
 
 AddPackage bats # Bash Automated Testing System
 AddPackage bats-assert # Common assertions for Bats
