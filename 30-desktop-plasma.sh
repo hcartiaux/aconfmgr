@@ -19,6 +19,7 @@ AddPackage qt6-multimedia-ffmpeg # FFMpeg backend for qt6-multimedia
 AddPackage noto-fonts # Google Noto TTF fonts
 AddPackage pipewire-jack # Low-latency audio/video router and processor - JACK replacement
 AddPackage plasma-meta # Meta package to install KDE Plasma
+AddPackage plasma-workspace-wallpapers # Additional wallpapers for the Plasma Workspace
 
 # Install kde-applications-meta
 AddPackage pyside6 # Enables the use of Qt6 APIs in Python applications
