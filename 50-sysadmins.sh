@@ -75,6 +75,8 @@ AddPackage python-ldap # LDAP client API for Python
 AddPackage python-xmljson # Converts XML into JSON/Python dicts/arrays and vice-versa.
 AddPackage python-flake8 # The modular source code checker: pep8, pyflakes and co
 AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
+AddPackage ruff # An extremely fast Python linter, written in Rust
+AddPackage ty # Extremely fast Python type checker and language server, written in Rust
 
 ## Puppet
 AddPackage r10k # Provides a general purpose toolset for deploying Puppet environments and modules.
