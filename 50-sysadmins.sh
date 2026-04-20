@@ -77,6 +77,7 @@ AddPackage python-flake8 # The modular source code checker: pep8, pyflakes and c
 AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
 AddPackage ruff # An extremely fast Python linter, written in Rust
 AddPackage ty # Extremely fast Python type checker and language server, written in Rust
+AddPackage vulture # Finds dead code in Python projects
 
 ## Puppet
 AddPackage r10k # Provides a general purpose toolset for deploying Puppet environments and modules.
