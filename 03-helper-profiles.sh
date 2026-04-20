@@ -13,11 +13,19 @@ function Source() {
 #   load module <module_name> and the requested flavors
 #
 function ModuleLoad() {
-    MODULE=$1; shift 1
-    FLAVORS=$@
-    LogEnter 'Loading %s...\n' "$(Color Y "%q" "$MODULE")"
+    local MODULE="${1:-}"
+    shift || true
+
+    if [[ -z "$MODULE" ]]; then
+        FatalError "ModuleLoad called without module name \n" >&2
+        return 1
+    fi
+
+    local FLAVORS=("$@")
+
+    LogEnter 'Loading [%s]...\n' "$(Color Y "%q" "$MODULE")"
     Source "modules/$MODULE/common.sh"
-    for flavor in $FLAVORS; do 
+    for flavor in "${FLAVORS[@]}"; do
         Source "modules/$MODULE/$flavor.sh"
     done
     LogLeave
