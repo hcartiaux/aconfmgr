@@ -24,7 +24,9 @@ function ModuleLoad() {
     local FLAVORS=("$@")
 
     LogEnter 'Loading [%s]...\n' "$(Color Y "%q" "$MODULE")"
-    Source "modules/$MODULE/common.sh"
+    if [[ -f "$config_dir/modules/$MODULE/common.sh" ]]; then
+        Source "modules/$MODULE/common.sh"
+    fi
     for flavor in "${FLAVORS[@]}"; do
         Source "modules/$MODULE/$flavor.sh"
     done
