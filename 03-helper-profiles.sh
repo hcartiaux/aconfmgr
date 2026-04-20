@@ -36,3 +36,25 @@ function ModuleLoad() {
     done
     LogLeave
 }
+
+
+#
+# CopyFile PATH [MODE [OWNER [GROUP]]]
+#
+# Copies a file from the "files/profiles/$HOSTNAME" subdirectory to the output.
+#
+# The specified path should be relative to the root of the "files" subdirectory.
+#
+# If MODE, OWNER and GROUP are blank or unspecified, they default to
+# "644", "root" and "root" respectively for new files.
+# Values corresponding to the above defaults must be specified
+# as an empty string ('').
+#
+function CopyProfileFile() {
+    local file="$1"
+    local mode="${2:-}"
+    local owner="${3:-}"
+    local group="${4:-}"
+
+    CopyFileTo "/profiles/${HOSTNAME}${file}" "$file" "$mode" "$owner" "$group"
+}
