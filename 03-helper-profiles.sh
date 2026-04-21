@@ -43,9 +43,11 @@ function ModuleLoad() {
 
 
 #
-# CopyFile PATH [MODE [OWNER [GROUP]]]
+# CopyProfileFile PATH [MODE [OWNER [GROUP]]]
 #
-# Copies a file from the "files/profiles/$HOSTNAME" subdirectory to the output.
+# Copies a file from "profiles/files/$HOSTNAME" subdirectory to the output.
+#
+# Caution: not compatible with the aconfmgr save feature
 #
 # The specified path should be relative to the root of the "files" subdirectory.
 #
@@ -60,5 +62,5 @@ function CopyProfileFile() {
     local owner="${3:-}"
     local group="${4:-}"
 
-    CopyFileTo "/profiles/${HOSTNAME}${file}" "$file" "$mode" "$owner" "$group"
+    CopyFileTo /../profiles/files/"$HOSTNAME"/"$file" "$file" "$mode" "$owner" "$group"
 }
