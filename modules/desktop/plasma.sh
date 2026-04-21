@@ -1,27 +1,20 @@
-# mdns and network service discovery
-AddPackage nss-mdns # glibc plugin providing host name resolution via mDNS
-AddPackage avahi # Service Discovery for Linux using mDNS/DNS-SD (compatible with Bonjour)
-f="$(GetPackageOriginalFile filesystem /etc/nsswitch.conf)"
-sed -i '/^hosts:/ s/resolve/mdns_minimal [NOTFOUND=return] resolve/' "$f"
-SystemdEnable avahi /usr/lib/systemd/system/avahi-daemon.service
-
-# VLC media player (Phonon backend)
-AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
-AddPackage vlc-plugins-all # Multi-platform MPEG, VCD/DVD, and DivX player - all plugins
+# Install plasma deps
 AddPackage phonon-qt6-vlc # Phonon VLC backend for Qt6
-AddPackage libdvdcss # Portable abstraction library for DVD decryption
-
-# Install plasma-meta
 AddPackage qt6-multimedia-ffmpeg # FFMpeg backend for qt6-multimedia
 AddPackage noto-fonts # Google Noto TTF fonts
 AddPackage pipewire-jack # Low-latency audio/video router and processor - JACK replacement
+
+# Install plasma-meta
 AddPackage plasma-meta # Meta package to install KDE Plasma
 AddPackage plasma-workspace-wallpapers # Additional wallpapers for the Plasma Workspace
 
-# Install kde-applications-meta
+# Install kde-applications-meta deps
 AddPackage pyside6 # Enables the use of Qt6 APIs in Python applications
 AddPackage cronie # Daemon that runs specified programs at scheduled times and related tools
 AddPackage tesseract-data-fra # Tesseract OCR data (fra)
+AddPackage tesseract-data-eng # Tesseract OCR data (eng)
+
+# Install kde-applications-meta
 AddPackage kde-applications-meta # Meta package for KDE Applications
 
 # Desktop login manager

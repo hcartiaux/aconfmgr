@@ -1,0 +1,8 @@
+# /dev/mapper/cryptroot
+UUID=e863962e-8211-4e53-87bc-ca64e8dacf02       /		btrfs		rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/@	0 0
+
+# /dev/mapper/cryptroot
+UUID=e863962e-8211-4e53-87bc-ca64e8dacf02       /home		btrfs		rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvol=/@home	0 0
+
+# /dev/nvme0n1p1
+UUID=EDDC-7EC2                                  /efi		vfat		rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2

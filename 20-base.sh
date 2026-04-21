@@ -8,11 +8,11 @@ AddPackage linux-lts # The LTS Linux kernel and modules
 AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
 
 # Base system config
-CopyFile /etc/fstab
-CopyFile /etc/hostname
+CopyProfileFile /etc/fstab
+CopyProfileFile /etc/hostname
 CopyFile /etc/locale.conf
 CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Luxembourg
-CopyFile /etc/cmdline.d/root.conf
+CopyProfileFile /etc/cmdline.d/root.conf
 CopyFile /etc/cmdline.d/default.conf
 CopyFile /etc/vconsole.conf
 CopyFile /etc/issue
