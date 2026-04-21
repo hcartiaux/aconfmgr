@@ -1,6 +1,3 @@
-# X11 keymap configuration
-CopyFile /etc/X11/xorg.conf.d/00-keyboard.conf
-
 # mdns and network service discovery
 AddPackage nss-mdns # glibc plugin providing host name resolution via mDNS
 AddPackage avahi # Service Discovery for Linux using mDNS/DNS-SD (compatible with Bonjour)
