@@ -15,7 +15,12 @@ CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Luxembourg
 CopyProfileFile /etc/cmdline.d/root.conf
 CopyFile /etc/cmdline.d/default.conf
 CopyFile /etc/vconsole.conf
-CopyFile /etc/issue
+
+# issue file displayed in ttys
+CPU=$(awk -F': ' '/^model name/ {print $2; exit}'              /proc/cpuinfo)
+MEM=$(awk        '/^MemTotal/   {printf "%.0f", $2/1024/1024}' /proc/meminfo)
+MODEL=$(cat /sys/class/dmi/id/product_name)
+InstallTemplate /etc/issue
 
 # System manual
 AddPackage man-db # A utility for reading man pages
