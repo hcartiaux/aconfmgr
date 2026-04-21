@@ -1,10 +1,14 @@
+# shellcheck shell=bash
+
 # Source <file1> <file2> ...
 #   source files in $config_dir
 #
 function Source() {
-    for file in $@; do
+    for file in "$@"; do
+        # shellcheck disable=SC2154
         if [[ -f "$config_dir/$file" ]]; then
             LogEnter 'Sourcing %s...\n' "$(Color C "%q" "$config_dir/$file")"
+            # shellcheck disable=SC1090
             source "$config_dir/$file"
             LogLeave ''
         else
