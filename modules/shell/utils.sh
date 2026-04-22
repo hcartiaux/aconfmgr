@@ -1,3 +1,8 @@
+# Interactive shell improvement
+AddPackage powerline # Statuslines and prompts for several applications including vim, zsh, bash, tmux, IPython, Awesome, i3 and Qtile
+AddPackage powerline-fonts # Patched fonts for powerline
+AddPackage fzf # Command-line fuzzy finder
+
 # System monitoring
 AddPackage htop # Interactive process viewer
 AddPackage iotop # View I/O usage of processes
@@ -13,6 +18,10 @@ AddPackage sg3_utils # Generic SCSI utilities
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
 AddPackage plocate # Alternative to locate, faster and compatible with mlocate's database.
 CopyFile /etc/updatedb.conf
+
+# File transfers
+AddPackage rsync # A fast and versatile file copying tool for remote and local files
+
 # Backup
 AddPackage --foreign bontmia # Bontmia (Backup Over Network To Multiple Incremental Archives)
 
@@ -35,16 +44,21 @@ AddPackage unzip # For extracting and viewing files in .zip archives
 AddPackage unrar # The RAR uncompression program
 AddPackage 7zip # File archiver for extremely high compression
 
-# Latex
-AddPackage texlive-meta # Metapackage to install Tex Live
-AddPackage texmaker # Free cross-platform LaTeX editor
-
 # Calculators
 AddPackage bc # An arbitrary precision calculator language
 
 # Image files manipulation
 AddPackage jpegoptim # Jpeg optimisation utility
 AddPackage optipng # Compresses PNG files to a smaller size, without losing any information.
+
+# Password management
+AddPackage pwgen # Password generator for creating easily memorable passwords
+AddPackage pass # Stores, retrieves, generates, and synchronizes passwords securely
+AddPackage wl-clipboard # Command-line copy/paste utilities for Wayland
+
+# Terminal screencast recording
+AddPackage asciinema # Record and share terminal sessions
+AddPackage --foreign asciinema-agg # asciinema gif generator
 
 # Misc CLI tools
 AddPackage tmux # Terminal multiplexer
@@ -56,3 +70,11 @@ AddPackage pdftk # Command-line tool for working with PDFs
 AddPackage figlet # A program for making large letters out of ordinary text
 AddPackage tigervnc # Suite of VNC servers and clients based on the VNC 4 branch of TightVNC
 AddPackage txt2man # Converts flat ASCII text to man page format
+AddPackage gnuplot # Plotting package which outputs to X11, PostScript, PNG, GIF, and others
+AddPackage parallel # A shell tool for executing jobs in parallel
+AddPackage colordiff # A Perl script wrapper for 'diff' that produces the same output but with pretty 'syntax' highlighting
+AddPackage signify # OpenBSD tool to cryptographically sign and verify files
+
+# Misc
+AddPackage hugo # Fast and Flexible Static Site Generator in Go
+AddPackage --foreign ca-certificates-dn42 # dn42 root certificates for *.dn42 and 172.22.0.0/15

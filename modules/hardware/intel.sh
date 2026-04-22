@@ -1,3 +1,5 @@
+# Intel support
+
 AddPackage intel-ucode # Microcode update files for Intel CPUs
 AddPackage intel-gpu-tools # Tools for development and testing of the Intel DRM driver
 

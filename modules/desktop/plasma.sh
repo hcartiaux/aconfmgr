@@ -1,3 +1,8 @@
+# VLC media player (Phonon backend)
+AddPackage vlc # Multi-platform MPEG, VCD/DVD, and DivX player
+AddPackage vlc-plugins-all # Multi-platform MPEG, VCD/DVD, and DivX player - all plugins
+AddPackage libdvdcss # Portable abstraction library for DVD decryption
+
 # Install plasma deps
 AddPackage phonon-qt6-vlc # Phonon VLC backend for Qt6
 AddPackage qt6-multimedia-ffmpeg # FFMpeg backend for qt6-multimedia

@@ -1,17 +1,18 @@
+# NVIDIA support
+
 pci_id=$(lspci | sed -n 's/\([^ ]*\) 3D controller: NVIDIA.*/\1/p' | xargs)
 
 if [ -n "${pci_id}" ] ; then
 
     # Nvidia driver support
-    AddPackage nvidia-open # NVIDIA open kernel modules
-    AddPackage nvidia-open-lts # NVIDIA open kernel modules for linux-lts
-    AddPackage nvidia-utils # NVIDIA drivers utilities
+    # AddPackage nvidia-open # NVIDIA open kernel modules
+    # AddPackage nvidia-open-lts # NVIDIA open kernel modules for linux-lts
+    # AddPackage nvidia-utils # NVIDIA drivers utilities
 
     ## Use Nvidia driver 580 for unsupported GPUs
     ## See https://archlinux.org/news/nvidia-590-driver-drops-pascal-support-main-packages-switch-to-open-kernel-modules/
-    #
-    # AddPackage --foreign nvidia-580xx-dkms
-    # AddPackage --foreign nvidia-580xx-utils
+    AddPackage --foreign nvidia-580xx-dkms
+    AddPackage --foreign nvidia-580xx-utils
 
     AddPackage nvidia-prime # NVIDIA Prime Render Offload configuration and utilities
 
