@@ -6,7 +6,7 @@ if [ "$aconfmgr_action" = "apply" ]; then
 
     LogEnter 'Applying dotfiles...\n'
     if [ ! -d "$DOTFILES_DIR" ]; then
-       git clone "$DOTFILES_REPO" "$DOTFILES_DIR"
+        git clone "$DOTFILES_REPO" "$DOTFILES_DIR"
     fi
 
     {
