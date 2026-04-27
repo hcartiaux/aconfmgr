@@ -28,9 +28,6 @@ AddPackage wine # A compatibility layer for running Windows programs
 AddPackage wine-gecko # Wine's built-in replacement for Microsoft's Internet Explorer
 AddPackage wine-mono # Wine's built-in replacement for Microsoft's .NET Framework
 
-# Zed editor
-AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
-
 # Misc
 AddPackage syncthing # Open Source Continuous Replication / Cluster Synchronization Thing
 AddPackage --foreign screen-message # Displays a short text fullscreen as large and as quickly as possible.

@@ -1,3 +1,6 @@
+# Default editor
+AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
+
 # Interactive shell improvement
 AddPackage powerline # Statuslines and prompts for several applications including vim, zsh, bash, tmux, IPython, Awesome, i3 and Qtile
 AddPackage powerline-fonts # Patched fonts for powerline
