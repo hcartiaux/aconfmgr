@@ -9,6 +9,7 @@ IgnorePath /boot/\*
 
 # /efi
 IgnorePath /efi/EFI/\*
+IgnorePath /efi/loader/boot-secret-mixin
 IgnorePath /efi/loader/credentials
 IgnorePath /efi/loader/entries
 IgnorePath /efi/loader/entries.srel
