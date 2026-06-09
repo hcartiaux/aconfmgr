@@ -13,4 +13,3 @@ AddPackage tk # A windowing toolkit for use with tcl (git gui dependency)
 AddPackage cmake # A cross-platform open-source make system
 AddPackage meson # High productivity build system
 AddPackage lld # Linker from the LLVM project
-AddPackage --foreign openssl-1.1 # The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
