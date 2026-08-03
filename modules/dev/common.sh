@@ -6,7 +6,6 @@ AddPackage git-lfs # Git extension for versioning large files
 AddPackage tig # Text-mode interface for Git.
 AddPackage github-cli # The GitHub CLI
 AddPackage lazygit # Simple terminal UI for git commands
-AddPackage --foreign gitflow-cjs # CJS Edition of the git extensions to provide high-level repository operations for Vincent Driessen's branching model.
 AddPackage tk # A windowing toolkit for use with tcl (git gui dependency)
 
 # Common build dependencies
