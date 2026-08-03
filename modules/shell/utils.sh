@@ -38,7 +38,7 @@ AddPackage wget # Network utility to retrieve files from the web
 AddPackage whois # Intelligent WHOIS client
 AddPackage openbsd-netcat # TCP/IP swiss army knife. OpenBSD variant.
 AddPackage bind # A complete, highly portable implementation of the DNS protocol
-AddPackage --foreign netcalc # IP network calculator - Simplified clone of sipcalc with ipcalc looks.
+AddPackage netcalc # IP network calculator - Simplified clone of sipcalc with ipcalc looks.
 AddPackage openldap # Lightweight Directory Access Protocol (LDAP) client and server
 AddPackage rtorrent # Ncurses BitTorrent client based on libTorrent
 
