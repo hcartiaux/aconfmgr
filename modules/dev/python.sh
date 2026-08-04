@@ -12,4 +12,3 @@ AddPackage python-ldap # LDAP client API for Python
 AddPackage python-pytest # Simple powerful testing with Python
 AddPackage python-xmljson # Converts XML into JSON/Python dicts/arrays and vice-versa.
 AddPackage python-flake8 # The modular source code checker: pep8, pyflakes and co
-AddPackage --foreign python-gitchangelog # Creates a changelog from git log history.
