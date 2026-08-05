@@ -84,7 +84,6 @@ IgnorePath /etc/wpa_supplicant/\*
 # Archlinux config
 CopyFile /etc/makepkg.conf
 CopyFile /etc/pacman.conf
-AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
 AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
 AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper written in go.
 
