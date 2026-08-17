@@ -69,6 +69,12 @@ CopyFile /etc/mkinitcpio.conf
 CopyFile /etc/mkinitcpio.d/linux.preset
 CopyFile /etc/mkinitcpio.d/linux-lts.preset
 
+# Zram
+AddPackage zram-generator # Systemd unit generator for zram devices
+CopyFile /etc/sysctl.d/99-vm-zram-parameters.conf
+CopyFile /etc/systemd/zram-generator.conf
+systemd_files+=(zram-generator.conf)
+
 # Networking
 AddPackage --foreign r8152-dkms # A kernel module for Realtek RTL8152/RTL8153/RTL8154/RTL8156 Based USB Ethernet Adapters
 AddPackage networkmanager # Network connection manager and user applications
