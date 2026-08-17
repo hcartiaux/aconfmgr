@@ -7,6 +7,7 @@ AddPackage tig # Text-mode interface for Git.
 AddPackage github-cli # The GitHub CLI
 AddPackage lazygit # Simple terminal UI for git commands
 AddPackage tk # A windowing toolkit for use with tcl (git gui dependency)
+AddPackage pre-commit # A framework for managing and maintaining multi-language pre-commit hooks
 
 # Common build dependencies
 AddPackage cmake # A cross-platform open-source make system
