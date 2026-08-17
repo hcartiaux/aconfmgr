@@ -41,6 +41,8 @@ AddPackage bind # A complete, highly portable implementation of the DNS protocol
 AddPackage netcalc # IP network calculator - Simplified clone of sipcalc with ipcalc looks.
 AddPackage openldap # Lightweight Directory Access Protocol (LDAP) client and server
 AddPackage rtorrent # Ncurses BitTorrent client based on libTorrent
+AddPackage mtr # Combines the functionality of traceroute and ping into one tool (CLI version)
+AddPackage links # A text WWW browser, similar to Lynx
 
 # Compression
 AddPackage unzip # For extracting and viewing files in .zip archives
