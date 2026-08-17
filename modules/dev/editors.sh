@@ -19,5 +19,9 @@ AddPackage luarocks # Deployment and management system for Lua modules
 AddPackage bash-language-server # Bash language server implementation based on Tree Sitter and its grammar for Bash
 AddPackage yaml-language-server # YAML Language Server
 
+## Linters
+AddPackage markdownlint-cli2 # Fast, flexible, configuration-based command-line interface for linting Markdown/CommonMark files with the markdownlint library
+
+
 # Zed editor
 AddPackage zed # A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
