@@ -31,4 +31,3 @@ AddPackage wine-mono # Wine's built-in replacement for Microsoft's .NET Framewor
 # Misc
 AddPackage syncthing # Open Source Continuous Replication / Cluster Synchronization Thing
 AddPackage screen-message # Displays a short text fullscreen as large and as quickly as possible.
-AddPackage --foreign luniistore # Manage your Lunii's My Fabulous Storyteller content or buy new ones
