@@ -8,6 +8,7 @@ AddPackage linux-lts # The LTS Linux kernel and modules
 AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
 
 # Base system config
+SetFileProperty / mode 555
 CopyProfileFile /etc/fstab
 CopyProfileFile /etc/hostname
 CopyFile /etc/locale.conf
