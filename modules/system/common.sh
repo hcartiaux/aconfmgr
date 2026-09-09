@@ -7,7 +7,7 @@ AddPackage linux-headers # Headers and scripts for building modules for the Linu
 AddPackage linux-lts # The LTS Linux kernel and modules
 AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
 
-# Base system config
+# Base system configuration
 SetFileProperty / mode 555
 CopyProfileFile /etc/fstab
 CopyProfileFile /etc/hostname
@@ -34,17 +34,11 @@ echo "kernel.sysrq = 1" > "$(CreateFile /etc/sysctl.d/99-sysrq.conf)"
 f="$(GetPackageOriginalFile systemd /etc/systemd/journald.conf)"
 sed -i 's/^#SystemMaxUse=/SystemMaxUse=512M/g' "$f"
 
-# Btrfs tools
-AddPackage btrfs-progs # Btrfs filesystem utilities
-AddPackage compsize # Calculate compression ratio of a set of files on Btrfs
-AddPackage duperemove # Btrfs extent deduplication utility
-AddPackage snapper # A tool for managing BTRFS and LVM snapshots
-AddPackage snap-pac # Pacman hooks that use snapper to create pre/post btrfs snapshots like openSUSE's YaST
-CopyFile /etc/conf.d/snapper
-CopyFile /etc/snapper/configs/root 640
-CopyFile /etc/snapper/configs/home 640
-SystemdEnable snapper /usr/lib/systemd/system/snapper-cleanup.timer
-SystemdEnable snapper /usr/lib/systemd/system/snapper-timeline.timer
+# Archlinux configuration
+CopyFile /etc/makepkg.conf
+CopyFile /etc/pacman.conf
+AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
+AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper written in go.
 
 # UEFI and Secure Boot
 AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
@@ -66,35 +60,6 @@ CopyFile /etc/mkinitcpio.conf
 CopyFile /etc/mkinitcpio.d/linux.preset
 CopyFile /etc/mkinitcpio.d/linux-lts.preset
 
-# Zram
-AddPackage zram-generator # Systemd unit generator for zram devices
-CopyFile /etc/sysctl.d/99-vm-zram-parameters.conf
-CopyFile /etc/systemd/zram-generator.conf
-systemd_files+=(zram-generator.conf)
-
-# Networking
-AddPackage networkmanager # Network connection manager and user applications
-AddPackage openconnect # Open client for Cisco AnyConnect VPN
-AddPackage networkmanager-openconnect # NetworkManager VPN plugin for OpenConnect
-SystemdEnable networkmanager /usr/lib/systemd/system/NetworkManager.service
-
-# 802.1x wired interface configuration, started manually with "/usr/bin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant-wired-enp46s0u2u4.conf -Dwired -i enp46s0u2u4"
-# CopyFile /etc/wpa_supplicant/wpa_supplicant-wired-enp46s0u2u4.conf 700
-IgnorePath /etc/wpa_supplicant/\*
-
-
-# Archlinux config
-CopyFile /etc/makepkg.conf
-CopyFile /etc/pacman.conf
-AddPackage --foreign aconfmgr-git # A configuration manager for Arch Linux
-AddPackage --foreign yay # Yet another yogurt. Pacman wrapper and AUR helper written in go.
-
-# Security
+# Sudo configuration
 CopyFile /etc/sudoers
 CopyFile /etc/sudoers.d/session 440
-
-AddPackage apparmor # Mandatory Access Control (MAC) using Linux Security Module (LSM)
-CopyFile /etc/apparmor/parser.conf
-CopyFile /etc/cmdline.d/apparmor.conf
-SystemdEnable apparmor /usr/lib/systemd/system/apparmor.service
-SystemdEnable audit /usr/lib/systemd/system/auditd.service
