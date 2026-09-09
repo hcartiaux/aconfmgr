@@ -23,10 +23,6 @@ MEM=$(awk        '/^MemTotal/   {printf "%.0f", $2/1024/1024}' /proc/meminfo)
 MODEL=$(cat /sys/class/dmi/id/product_name)
 InstallTemplate /etc/issue
 
-# System manual
-AddPackage man-db # A utility for reading man pages
-AddPackage man-pages # Linux man pages
-
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
 sed -i 's/^#\(en_US.UTF-8\)/\1/g' "$f"

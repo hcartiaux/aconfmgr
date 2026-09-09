@@ -1,3 +1,7 @@
+# System manual
+AddPackage man-db # A utility for reading man pages
+AddPackage man-pages # Linux man pages
+
 # Default editor
 AddPackage vim # Vi Improved, a highly configurable, improved version of the vi text editor
 
