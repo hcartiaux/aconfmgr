@@ -73,7 +73,6 @@ CopyFile /etc/systemd/zram-generator.conf
 systemd_files+=(zram-generator.conf)
 
 # Networking
-AddPackage --foreign r8152-dkms # A kernel module for Realtek RTL8152/RTL8153/RTL8154/RTL8156 Based USB Ethernet Adapters
 AddPackage networkmanager # Network connection manager and user applications
 AddPackage openconnect # Open client for Cisco AnyConnect VPN
 AddPackage networkmanager-openconnect # NetworkManager VPN plugin for OpenConnect
