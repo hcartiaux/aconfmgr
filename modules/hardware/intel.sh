@@ -8,7 +8,7 @@ AddPackage intel-media-driver # Intel Media Driver for VAAPI — Broadwell+ iGPU
 AddPackage libva-utils # Intel VA-API Media Applications and Scripts for libva
 
 # NPU driver
-# AddPackage --foreign intel-npu-driver # Intel Neural Processing Unit (NPU) driver
+# AddPackage intel-npu-driver # Intel Neural Processing Unit (NPU) driver
 
 # GPU vulkan backend
 AddPackage vulkan-intel # Open-source Vulkan driver for Intel GPUs
