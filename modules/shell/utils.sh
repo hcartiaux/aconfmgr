@@ -67,7 +67,6 @@ AddPackage wl-clipboard # Command-line copy/paste utilities for Wayland
 
 # Terminal screencast recording
 AddPackage asciinema # Record and share terminal sessions
-AddPackage --foreign asciinema-agg # asciinema gif generator
 
 # Misc CLI tools
 AddPackage tmux # Terminal multiplexer
