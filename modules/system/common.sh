@@ -13,17 +13,19 @@ CopyProfileFile /etc/fstab
 CopyProfileFile /etc/hostname
 CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Luxembourg
 CopyFile /etc/vconsole.conf
-echo "LANG=${lang:-en_US.UTF-8}" > "$(CreateFile /etc/locale.conf)"
+
+# Specify locales and default language
+lang="${lang:-en_US.UTF-8}"
+echo "LANG=${lang}" > "$(CreateFile /etc/locale.conf)"
+
+f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
+sed -i "s/^#\(en_US.UTF-8\|${lang}\)/\1/g" "$f"
 
 # issue file displayed in ttys
 CPU=$(awk -F': ' '/^model name/ {print $2; exit}'              /proc/cpuinfo)
 MEM=$(awk        '/^MemTotal/   {printf "%.0f", $2/1024/1024}' /proc/meminfo)
 MODEL=$(cat /sys/class/dmi/id/product_name)
 InstallTemplate /etc/issue
-
-# Specify locales
-f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
-sed -i "s/^#\(en_US.UTF-8\|${lang}\)/\1/g" "$f"
 
 # Enable Magic SysRq
 echo "kernel.sysrq = 1" > "$(CreateFile /etc/sysctl.d/99-sysrq.conf)"
