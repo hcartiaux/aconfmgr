@@ -1,0 +1,14 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda1
+UUID=a02805c2-ed00-4e17-b838-a912757c2917	/         	btrfs     	rw,relatime,compress=zstd:1,space_cache=v2,subvol=/@	0 0
+
+# /dev/sda1
+UUID=a02805c2-ed00-4e17-b838-a912757c2917	/home     	btrfs     	rw,relatime,compress=zstd:1,space_cache=v2,subvol=/@home	0 0
+
+# /dev/sda1
+UUID=a02805c2-ed00-4e17-b838-a912757c2917	/swap     	btrfs     	rw,relatime,space_cache=v2,subvol=/@swap	0 0
+
+/swap/swapfile      	none      	swap      	defaults  	0 0

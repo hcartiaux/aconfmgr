@@ -4,6 +4,9 @@ IgnorePathsExcept /var/lib/systemd 'linger' 'linger/*'
 # Btrfs snapshots
 IgnorePath /.snapshots/\*
 
+# Swap file
+IgnorePath /swap/\*
+
 # /boot
 IgnorePath /boot/\*
 

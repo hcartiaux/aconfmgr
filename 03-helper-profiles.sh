@@ -17,6 +17,10 @@ function Source() {
     done;
 }
 
+function HasFlavor() {
+    [[ " $FLAVORS[@] " =~ "${1}" ]]
+}
+
 # ModuleLoad <module_name> <flavor1> ...
 #   load module <module_name> and the requested flavors
 #

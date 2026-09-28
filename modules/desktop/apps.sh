@@ -31,3 +31,4 @@ AddPackage wine-mono # Wine's built-in replacement for Microsoft's .NET Framewor
 # Misc
 AddPackage syncthing # Open Source Continuous Replication / Cluster Synchronization Thing
 AddPackage screen-message # Displays a short text fullscreen as large and as quickly as possible.
+AddPackage gnuchess # Play chess against the computer on a terminal and an engine for graphical chess frontends

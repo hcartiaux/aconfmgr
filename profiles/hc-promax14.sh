@@ -1,4 +1,4 @@
-ModuleLoad system     btrfs apparmor zram network
+ModuleLoad system     uefi btrfs apparmor zram network
 ModuleLoad hardware   intel printers power-mgmt sound bluetooth fw-mgmt
 ModuleLoad desktop    plasma web mail apps
 ModuleLoad shell      bash zsh dotfiles utils
