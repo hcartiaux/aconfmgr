@@ -17,10 +17,6 @@ function Source() {
     done;
 }
 
-function HasFlavor() {
-    [[ " $FLAVORS[@] " =~ "${1}" ]]
-}
-
 # ModuleLoad <module_name> <flavor1> ...
 #   load module <module_name> and the requested flavors
 #
@@ -45,6 +41,12 @@ function ModuleLoad() {
     LogLeave
 }
 
+# HasFlavor <flavor> ...
+#   return $?=0 if <flavor> is selected for the current module
+#
+function HasFlavor() {
+    [[ " ${FLAVORS[*]} " =~ $1 ]]
+}
 
 #
 # CopyProfileFile PATH [MODE [OWNER [GROUP]]]
