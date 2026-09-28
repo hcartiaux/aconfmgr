@@ -7,4 +7,8 @@ if HasFlavor plasma; then
   AddPackage --foreign firefox-extension-plasma-integration # KDE plasma browser integration extension for firefox
 fi
 
+if [[ "${lang}" =~ ^fr_ ]] ; then
+  AddPackage firefox-i18n-fr # French language pack for Firefox
+fi
+
 AddPackage chromium # A web browser built for speed, simplicity, and security

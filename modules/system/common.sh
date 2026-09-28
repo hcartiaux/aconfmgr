@@ -13,7 +13,7 @@ CopyProfileFile /etc/fstab
 CopyProfileFile /etc/hostname
 CreateLink /etc/localtime /usr/share/zoneinfo/Europe/Luxembourg
 CopyFile /etc/vconsole.conf
-echo "LANG=$lang" > "$(CreateFile /etc/locale.conf)"
+echo "LANG=${lang:-en_US.UTF-8}" > "$(CreateFile /etc/locale.conf)"
 
 # issue file displayed in ttys
 CPU=$(awk -F': ' '/^model name/ {print $2; exit}'              /proc/cpuinfo)

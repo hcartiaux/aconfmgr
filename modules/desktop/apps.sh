@@ -17,7 +17,10 @@ AddPackage xournalpp # Handwriting notetaking software with PDF annotation suppo
 
 # LibreOffice
 AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
-AddPackage --foreign libreoffice-extension-grammalecte-fr # French grammar checker extension for LibreOffice.
+if [[ "${lang}" =~ ^fr_ ]] ; then
+  AddPackage --foreign libreoffice-extension-grammalecte-fr # French grammar checker extension for LibreOffice.
+  AddPackage libreoffice-fresh-fr # French language pack for LibreOffice Fresh
+fi
 
 # Messaging
 AddPackage signal-desktop # Signal Private Messenger for Linux
