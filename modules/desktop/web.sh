@@ -1,6 +1,5 @@
 # Web browsers
 AddPackage firefox # Fast, Private & Safe Web Browser
-AddPackage firefoxpwa # A tool to install, manage and use Progressive Web Apps (PWAs) in Mozilla Firefox (native component)
 AddPackage firefox-ublock-origin # Efficient blocker add-on for various browsers. Fast, potent, and lean
 
 if HasFlavor plasma; then
