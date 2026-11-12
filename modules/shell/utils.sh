@@ -32,6 +32,7 @@ AddPackage strace # A diagnostic, debugging and instructional userspace tracer
 AddPackage dool # A versatile resource statistics tool
 
 # Storage
+AddPackage dosfstools # DOS filesystem utilities
 AddPackage hdparm # A shell utility for manipulating Linux IDE drive/driver parametersi
 AddPackage sg3_utils # Generic SCSI utilities
 AddPackage ncdu # Disk usage analyzer with an ncurses interface
