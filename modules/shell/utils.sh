@@ -22,6 +22,7 @@ AddPackage powerline-fonts # Patched fonts for powerline
 AddPackage fzf # Command-line fuzzy finder
 
 # System monitoring
+AddPackage btop # A monitor of system resources, bpytop ported to C++
 AddPackage htop # Interactive process viewer
 AddPackage iotop # View I/O usage of processes
 AddPackage nvtop # GPUs process monitoring for AMD, Intel and NVIDIA
