@@ -69,6 +69,7 @@ AddPackage 7zip # File archiver for extremely high compression
 AddPackage bc # An arbitrary precision calculator language
 
 # Image files manipulation
+AddPackage imagemagick # An image viewing/manipulation program
 AddPackage jpegoptim # Jpeg optimisation utility
 AddPackage optipng # Compresses PNG files to a smaller size, without losing any information.
 
